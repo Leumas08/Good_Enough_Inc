@@ -11,13 +11,19 @@
 public class Race {
    private String name;
    private String Election_Type;
-   private String [] items;
+   private Item[] items;
    
-   public Race(String name, String Election_Type, String[] items)
+   public Race()
+   {
+       this.name=null;
+       this.Election_Type=null;
+       this.items[0]=new Item();
+   }
+   public Race(String name, String Election_Type, Item[] items)
    {
        this.name=name;
        this.Election_Type=Election_Type;
-       this.items=new String[items.length];
+       this.items=new Item[items.length];
        for(int i=0; i<items.length; i++)
        {
            this.items[i]=items[i];
