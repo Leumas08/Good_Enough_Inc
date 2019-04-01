@@ -14,6 +14,11 @@ public class Commissioner {
     private String name;
     private String email;
     
+    public Commissioner()
+    {
+        this.name=null;
+        this.email=null;
+    }
     public Commissioner(String name, String email)
     {
         this.name=name;
