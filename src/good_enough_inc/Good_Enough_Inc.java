@@ -16,6 +16,7 @@ public class Good_Enough_Inc {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+   //test1
     }
     
 }
