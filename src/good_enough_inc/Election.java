@@ -14,6 +14,12 @@ public class Election {
     private String name;
     private Commissioner Commissioner;
     private Ballot Ballot;
+    public Election()
+    {
+        this.name=null;
+        this.Commissioner=new Commissioner();
+        this.Ballot=new Ballot();
+    }
     public Election(String name, String Com_name, String email)
     {
       this.name=name;
