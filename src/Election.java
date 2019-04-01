@@ -11,6 +11,7 @@
 public class Election {
     private String name;
     private Commissioner Commissioner;
+    private Ballot Ballot;
     public Election(String name, String Com_name, String email)
     {
       this.name=name;
