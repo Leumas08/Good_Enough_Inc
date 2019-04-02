@@ -13,11 +13,7 @@ package good_enough_inc;
 public class Item {
     private String party;
     private String[] names;
-    public Item()
-    {
-        this.party=null;
-        this.names[0]=null;
-    }
+
     public Item(String party, String[] names)
     {
         this.party=party;
@@ -26,5 +22,13 @@ public class Item {
         {
             this.names[i]=names[i];
         }
+    }
+    public String getParty()
+    {
+        return this.party;
+    }
+    public String[] getNames()
+    {
+        return this.names;
     }
 }
