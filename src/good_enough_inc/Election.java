@@ -13,17 +13,30 @@ package good_enough_inc;
 public class Election {
     private String name;
     private Commissioner Commissioner;
+    private boolean Status;
     private Ballot Ballot;
     public Election()
     {
-        this.name=null;
-        this.Commissioner=new Commissioner();
-        this.Ballot=new Ballot();
+        //this.name=null;
+        //this.Commissioner=new Commissioner();
+        //this.Ballot=new Ballot();
     }
     public Election(String name, String Com_name, String email)
     {
       this.name=name;
       this.Commissioner=new Commissioner(Com_name, email);
-      this.Ballot=new Ballot();
+      this.Status=false;
+    }
+    public String getName()
+    {
+        return this.name;
+    }
+    public String getComName()
+    {
+        return this.Commissioner.getName();
+    }
+    public String getEmail()
+    {
+        return this.Commissioner.getEmail();
     }
 }
