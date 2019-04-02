@@ -13,10 +13,4 @@ package good_enough_inc;
 public class Ballot {
     private String name;
     private Race[] Races;
-    
-    public Ballot()
-    {
-        this.name=null;
-        this.Races[0]=new Race();
-    }
 }
