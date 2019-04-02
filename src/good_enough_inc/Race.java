@@ -15,12 +15,7 @@ public class Race {
    private String Election_Type;
    private Item[] items;
    
-   public Race()
-   {
-       this.name=null;
-       this.Election_Type=null;
-       this.items[0]=new Item();
-   }
+
    public Race(String name, String Election_Type, Item[] items)
    {
        this.name=name;
@@ -30,5 +25,21 @@ public class Race {
        {
            this.items[i]=items[i];
        }
+   }
+   public String getName()
+   {
+        return this.name;
+   }
+   public String getType()
+   {
+        return this.Election_Type;
+   }
+   public String[] getItemNames(int item)
+   {
+        return this.items[item].getNames();
+   }
+   public String getItemParty(int item)
+   {
+        return this.items[item].getParty();
    }
 }
