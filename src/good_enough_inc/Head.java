@@ -98,6 +98,8 @@ public class Head extends javax.swing.JFrame {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
+        jFrame1.setPreferredSize(new java.awt.Dimension(580, 340));
+
         jLabel8.setText("Email:");
 
         Search.setText("Search");
@@ -207,7 +209,7 @@ public class Head extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jFrame1Layout.createSequentialGroup()
-                        .addGap(0, 4, Short.MAX_VALUE)
+                        .addGap(0, 9, Short.MAX_VALUE)
                         .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jFrame1Layout.createSequentialGroup()
                                 .addGap(12, 12, 12)
@@ -232,9 +234,7 @@ public class Head extends javax.swing.JFrame {
                                 .addComponent(Close))
                             .addComponent(E_Name)
                             .addComponent(jLabel17)))
-                    .addGroup(jFrame1Layout.createSequentialGroup()
-                        .addComponent(jButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jButton2))
                 .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jFrame1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -288,7 +288,7 @@ public class Head extends javax.swing.JFrame {
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(ComEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -408,7 +408,7 @@ public class Head extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(97, 97, 97)
                                         .addComponent(jLabel3)))))
-                        .addContainerGap(44, Short.MAX_VALUE))))
+                        .addContainerGap(22, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -444,7 +444,7 @@ public class Head extends javax.swing.JFrame {
                             .addComponent(jLabel7))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
@@ -460,6 +460,7 @@ public class Head extends javax.swing.JFrame {
        ComEmail.setText(Elections[selected].getEmail());
        if(Elections[selected].Status) OpenClose.setText("Open");
        else OpenClose.setText("Closed");
+       jFrame1.setSize(680 ,400);
        jFrame1.setDefaultCloseOperation(EXIT_ON_CLOSE);
        jFrame1.setVisible(true);
        this.setVisible(false); 
