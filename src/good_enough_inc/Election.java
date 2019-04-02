@@ -11,10 +11,10 @@ package good_enough_inc;
  * @author swp99
  */
 public class Election {
-    private String name;
-    private Commissioner Commissioner;
-    private boolean Status;
-    private Ballot Ballot;
+    public String name;
+    public Commissioner Commissioner;
+    public boolean Status;
+    public Ballot Ballot;
     public Election()
     {
         //this.name=null;
