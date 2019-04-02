@@ -11,8 +11,8 @@ package good_enough_inc;
  * @author swp99
  */
 public class Commissioner {
-    private String name;
-    private String email;
+    public String name;
+    public String email;
     
     public Commissioner(String name, String email)
     {
