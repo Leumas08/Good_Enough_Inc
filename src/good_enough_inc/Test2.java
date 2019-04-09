@@ -9,12 +9,13 @@ package good_enough_inc;
  *
  * @author swp99
  */
-public class Election_Editor extends javax.swing.JFrame {
+public class Test2 extends javax.swing.JDialog {
 
     /**
-     * Creates new form Election_Editor
+     * Creates new form Test2
      */
-    public Election_Editor() {
+    public Test2(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
         initComponents();
     }
 
@@ -27,85 +28,32 @@ public class Election_Editor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        Update = new javax.swing.JButton();
-        ComEmail = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        ComName = new javax.swing.JTextField();
-        Open = new javax.swing.JButton();
-        Name = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        OpenClose = new javax.swing.JLabel();
-        Close = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
         Search = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        ComName = new javax.swing.JTextField();
         found = new javax.swing.JLabel();
+        Open = new javax.swing.JButton();
         Disqualify = new javax.swing.JButton();
+        E_Name = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        OpenClose = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        Close = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        Update = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        ComEmail = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setText("Current Commissioner:");
-
-        Update.setText("Update Commissioner");
-        Update.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                UpdateActionPerformed(evt);
-            }
-        });
-
-        ComEmail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ComEmailActionPerformed(evt);
-            }
-        });
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel2.setText("Email:");
-
-        jLabel3.setText("Name:");
-
-        ComName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ComNameActionPerformed(evt);
-            }
-        });
-
-        Open.setText("Open");
-        Open.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OpenActionPerformed(evt);
-            }
-        });
-
-        Name.setText("Election Name");
-
-        jLabel5.setText("Election Status:");
-
-        OpenClose.setText("Open/Close");
-
-        Close.setText("Close");
-        Close.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CloseActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setText("Disqualify a Vote:");
-
-        jLabel6.setText("Search by ID#:");
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
 
         Search.setText("Search");
         Search.addActionListener(new java.awt.event.ActionListener() {
@@ -114,9 +62,24 @@ public class Election_Editor extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setText("Name:");
+
         jLabel7.setText("Search Status:");
 
+        ComName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComNameActionPerformed(evt);
+            }
+        });
+
         found.setText("Found/Not Found");
+
+        Open.setText("Open");
+        Open.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OpenActionPerformed(evt);
+            }
+        });
 
         Disqualify.setText("Disqualify");
         Disqualify.addActionListener(new java.awt.event.ActionListener() {
@@ -125,13 +88,51 @@ public class Election_Editor extends javax.swing.JFrame {
             }
         });
 
+        E_Name.setText("Election Name");
+
         jLabel8.setText("To change the current Commissioner, type in the new");
+
+        jLabel5.setText("Election Status:");
 
         jLabel9.setText("information and press 'Update Commissioner'.  To Disqualify");
 
+        OpenClose.setText("Open/Close");
+
         jLabel10.setText("a vote, enter the ID# and, if the Search Status is 'Found', ");
 
+        Close.setText("Close");
+        Close.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CloseActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Current Commissioner:");
+
         jLabel11.setText("press 'Disqualify' to disqualify the vote with that ID.");
+
+        jLabel4.setText("Disqualify a Vote:");
+
+        Update.setText("Update Commissioner");
+        Update.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UpdateActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setText("Search by ID#:");
+
+        ComEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComEmailActionPerformed(evt);
+            }
+        });
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -179,7 +180,7 @@ public class Election_Editor extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(Close))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(Name)
+                        .addComponent(E_Name)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel9)
@@ -193,7 +194,7 @@ public class Election_Editor extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Name)
+                    .addComponent(E_Name)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel9)
@@ -245,13 +246,9 @@ public class Election_Editor extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void UpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateActionPerformed
+    private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_UpdateActionPerformed
-
-    private void ComEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComEmailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ComEmailActionPerformed
+    }//GEN-LAST:event_SearchActionPerformed
 
     private void ComNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComNameActionPerformed
         // TODO add your handling code here:
@@ -261,21 +258,25 @@ public class Election_Editor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_OpenActionPerformed
 
+    private void DisqualifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DisqualifyActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DisqualifyActionPerformed
+
     private void CloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CloseActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CloseActionPerformed
 
+    private void UpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UpdateActionPerformed
+
+    private void ComEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ComEmailActionPerformed
+
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SearchActionPerformed
-
-    private void DisqualifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DisqualifyActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_DisqualifyActionPerformed
 
     /**
      * @param args the command line arguments
@@ -294,20 +295,27 @@ public class Election_Editor extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Election_Editor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Test2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Election_Editor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Test2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Election_Editor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Test2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Election_Editor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Test2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Election_Editor().setVisible(true);
+                Test2 dialog = new Test2(new javax.swing.JFrame(), true);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                    @Override
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0);
+                    }
+                });
+                dialog.setVisible(true);
             }
         });
     }
@@ -317,7 +325,7 @@ public class Election_Editor extends javax.swing.JFrame {
     private javax.swing.JTextField ComEmail;
     private javax.swing.JTextField ComName;
     private javax.swing.JButton Disqualify;
-    private javax.swing.JLabel Name;
+    private javax.swing.JLabel E_Name;
     private javax.swing.JButton Open;
     private javax.swing.JLabel OpenClose;
     private javax.swing.JButton Search;
