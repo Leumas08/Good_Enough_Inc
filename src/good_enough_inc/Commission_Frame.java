@@ -17,6 +17,7 @@ import javax.swing.JOptionPane;
  */
 public class Commission_Frame extends javax.swing.JFrame {
 
+    int selected=0;
     private static String Commission_FramSelect_ElectiongetName() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -28,8 +29,10 @@ public class Commission_Frame extends javax.swing.JFrame {
     DefaultListModel BallotList= new DefaultListModel();
     public Commission_Frame() {
         initComponents();
+        
         Elections.setModel(ElectionList);
         Ballots.setModel(BallotList);
+        
     }
 
     /**
@@ -57,6 +60,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         Elections = new javax.swing.JList<>();
         jScrollPane4 = new javax.swing.JScrollPane();
         Ballots = new javax.swing.JList<>();
+        jLabel5 = new javax.swing.JLabel();
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Create Ballot");
@@ -109,6 +113,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setText("Election Commissioner");
 
@@ -153,6 +158,8 @@ public class Commission_Frame extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(Ballots);
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -162,30 +169,32 @@ public class Commission_Frame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Select_Election, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(39, 39, 39)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(Edit_Ballot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(Create_Ballot, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE))))))
+                            .addComponent(Select_Election, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(Edit_Ballot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Create_Ballot, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(33, 33, 33)
                         .addComponent(jLabel2)
                         .addGap(92, 92, 92)
-                        .addComponent(jLabel3)))
-                .addContainerGap(114, Short.MAX_VALUE))
+                        .addComponent(jLabel3))
+                    .addComponent(jLabel5)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(jLabel1)))
+                .addContainerGap(245, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1)
-                .addGap(27, 27, 27)
+                .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3))
@@ -199,7 +208,7 @@ public class Commission_Frame extends javax.swing.JFrame {
                     .addComponent(Edit_Ballot))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Create_Ballot)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         pack();
@@ -207,7 +216,11 @@ public class Commission_Frame extends javax.swing.JFrame {
 
     private void Select_ElectionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_ElectionActionPerformed
         // TODO add your handling code here:
-        
+        if(Elections.getSelectedIndex() >=0)
+       {
+       selected=Elections.getSelectedIndex();
+       
+       }
     }//GEN-LAST:event_Select_ElectionActionPerformed
 
     private void Edit_BallotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edit_BallotActionPerformed
@@ -268,6 +281,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane3;
