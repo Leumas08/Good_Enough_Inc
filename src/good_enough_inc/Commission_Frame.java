@@ -29,8 +29,10 @@ public class Commission_Frame extends javax.swing.JFrame {
     DefaultListModel BallotList= new DefaultListModel();
     public Commission_Frame() {
         initComponents();
+        
         Elections.setModel(ElectionList);
         Ballots.setModel(BallotList);
+        
     }
 
     /**
@@ -184,7 +186,7 @@ public class Commission_Frame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(80, 80, 80)
                         .addComponent(jLabel1)))
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(245, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -206,7 +208,7 @@ public class Commission_Frame extends javax.swing.JFrame {
                     .addComponent(Edit_Ballot))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Create_Ballot)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         pack();
