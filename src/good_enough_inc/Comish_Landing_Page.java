@@ -16,6 +16,7 @@ public class Comish_Landing_Page extends javax.swing.JFrame {
      */
     public Comish_Landing_Page() {
         initComponents();
+        
     }
 
     /**
@@ -32,11 +33,13 @@ public class Comish_Landing_Page extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Select Role");
 
+        jButton1.setBackground(new java.awt.Color(51, 51, 51));
         jButton1.setText("Student");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -44,6 +47,7 @@ public class Comish_Landing_Page extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Election Commissioner");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -36,6 +36,7 @@ public class HSO_Landing_Page extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Select Role");
 
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Head of Student Organizations");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
