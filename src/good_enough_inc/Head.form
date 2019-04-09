@@ -21,11 +21,6 @@
       </Layout>
     </Container>
     <Container class="javax.swing.JFrame" name="jFrame1">
-      <Properties>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[580, 340]"/>
-        </Property>
-      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
