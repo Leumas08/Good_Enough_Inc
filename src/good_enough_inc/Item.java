@@ -11,8 +11,8 @@ package good_enough_inc;
  * @author swp99
  */
 public class Item {
-    private String party;
-    private String[] names;
+    public String party;
+    public String[] names;
 
     public Item(String party, String[] names)
     {
