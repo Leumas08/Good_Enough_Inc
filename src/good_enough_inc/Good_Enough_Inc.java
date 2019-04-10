@@ -18,6 +18,7 @@ public class Good_Enough_Inc {
         // TODO code application logic here
    //test1
         new Head().setVisible(true);
+        new Commission_Frame().setVisible(true);
     }
     
 }
