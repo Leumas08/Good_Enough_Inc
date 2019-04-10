@@ -11,6 +11,6 @@ package good_enough_inc;
  * @author swp99
  */
 public class Ballot {
-    private String name;
-    private Race[] Races;
+    public String name;
+    public Race[] Races;
 }
