@@ -11,9 +11,9 @@ package good_enough_inc;
  * @author swp99
  */
 public class Race {
-   private String name;
-   private String Election_Type;
-   private Item[] items;
+   public String name;
+   public String Election_Type;
+   public Item[] items;
    
 
    public Race(String name, String Election_Type, Item[] items)
