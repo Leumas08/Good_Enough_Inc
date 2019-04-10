@@ -29,7 +29,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     DefaultListModel BallotList= new DefaultListModel();
     public Commission_Frame() {
         initComponents();
-        
+        getContentPane().setBackground(new java.awt.Color(255,255,255));
         Elections.setModel(ElectionList);
         Ballots.setModel(BallotList);
         
