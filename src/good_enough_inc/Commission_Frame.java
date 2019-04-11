@@ -98,7 +98,7 @@ public class Commission_Frame extends javax.swing.JFrame {
                             .addComponent(jLabel6)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(BName, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(274, Short.MAX_VALUE))
+                .addContainerGap(854, Short.MAX_VALUE))
         );
         jFrame1Layout.setVerticalGroup(
             jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -113,7 +113,7 @@ public class Commission_Frame extends javax.swing.JFrame {
                 .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(BName1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(175, Short.MAX_VALUE))
+                .addContainerGap(455, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -274,6 +274,10 @@ public class Commission_Frame extends javax.swing.JFrame {
 
     private void Create_BallotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Create_BallotActionPerformed
         // TODO add your handling code here:
+        jFrame1.setSize(980, 569);
+        jFrame1.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        jFrame1.setVisible(true);
+        this.setVisible(false); 
         
     }//GEN-LAST:event_Create_BallotActionPerformed
 

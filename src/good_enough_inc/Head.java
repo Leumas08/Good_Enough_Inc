@@ -498,7 +498,7 @@ public class Head extends javax.swing.JFrame {
        ComEmail.setText(Elections[selected].getEmail());
        if(Elections[selected].Status) OpenClose.setText("Open");
        else OpenClose.setText("Closed");
-       jFrame1.setSize(680 ,400);
+       jFrame1.setSize(980, 569);
        jFrame1.setDefaultCloseOperation(EXIT_ON_CLOSE);
        jFrame1.setVisible(true);
        this.setVisible(false); 
