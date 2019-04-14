@@ -53,9 +53,6 @@ public class Head extends javax.swing.JFrame {
         Disqualify = new javax.swing.JButton();
         E_Name = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        OpenClose = new javax.swing.JLabel();
-        UpdateDate = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         Update = new javax.swing.JButton();
@@ -66,10 +63,6 @@ public class Head extends javax.swing.JFrame {
         Return = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel24 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        CloseText = new javax.swing.JTextField();
-        OpenText1 = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -145,20 +138,6 @@ public class Head extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel13.setText("To change the current Commissioner, type in the new information and press 'Update Commissioner'.");
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel14.setText("Election Status:");
-
-        OpenClose.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        OpenClose.setText("Open/Close");
-
-        UpdateDate.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        UpdateDate.setText("Update Open/Close Date");
-        UpdateDate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                UpdateDateActionPerformed(evt);
-            }
-        });
-
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel17.setText("Current Commissioner:");
 
@@ -212,39 +191,14 @@ public class Head extends javax.swing.JFrame {
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel24.setText("a vote, enter the ID# and, if the Search Status is 'Found', press 'Disqualify' to disqualify the vote with that ID#.");
 
-        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel15.setText("Open Date:");
-
-        CloseText.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CloseTextActionPerformed(evt);
-            }
-        });
-
-        OpenText1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OpenText1ActionPerformed(evt);
-            }
-        });
-
-        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel16.setText("Close Date:");
-
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
         jFrame1Layout.setHorizontalGroup(
             jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jFrame1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jFrame1Layout.createSequentialGroup()
-                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton2)
-                            .addGroup(jFrame1Layout.createSequentialGroup()
-                                .addComponent(jLabel14)
-                                .addGap(18, 18, 18)
-                                .addComponent(OpenClose)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(833, Short.MAX_VALUE)
                         .addComponent(Return, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jFrame1Layout.createSequentialGroup()
                         .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -255,23 +209,18 @@ public class Head extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 629, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(Update, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(CloseText, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jFrame1Layout.createSequentialGroup()
-                                    .addComponent(jLabel15)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(OpenText1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jFrame1Layout.createSequentialGroup()
-                                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jFrame1Layout.createSequentialGroup()
+                                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jFrame1Layout.createSequentialGroup()
                                         .addComponent(jLabel8)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(ComEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jFrame1Layout.createSequentialGroup()
+                                    .addGroup(jFrame1Layout.createSequentialGroup()
                                         .addComponent(jLabel9)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(ComName))
-                                    .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.LEADING))
+                                    .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(54, 54, 54)
                                 .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel19)
@@ -286,12 +235,10 @@ public class Head extends javax.swing.JFrame {
                                                 .addComponent(ID)
                                                 .addComponent(found)
                                                 .addComponent(Search, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE))))))
-                            .addComponent(jLabel16)
-                            .addComponent(UpdateDate)
                             .addGroup(jFrame1Layout.createSequentialGroup()
                                 .addGap(279, 279, 279)
                                 .addComponent(jLabel24)))
-                        .addGap(0, 6, Short.MAX_VALUE)))
+                        .addGap(0, 16, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jFrame1Layout.setVerticalGroup(
@@ -327,27 +274,13 @@ public class Head extends javax.swing.JFrame {
                             .addComponent(found))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Disqualify)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 175, Short.MAX_VALUE)
                         .addComponent(Return, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jFrame1Layout.createSequentialGroup()
                         .addComponent(Update)
                         .addGap(18, 18, 18)
-                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel15)
-                            .addComponent(OpenText1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(6, 6, 6)
-                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(CloseText, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel16))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(UpdateDate)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel14)
-                            .addComponent(OpenClose))
-                        .addGap(43, 43, 43)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 64, Short.MAX_VALUE)))
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -591,20 +524,6 @@ public class Head extends javax.swing.JFrame {
         else found.setText("Not Found");
     }//GEN-LAST:event_SearchActionPerformed
 
-    private void UpdateDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateDateActionPerformed
-        // TODO add your handling code here:
-        Elections[selected].Status=false;
-        OpenClose.setText("Closed");
-    }//GEN-LAST:event_UpdateDateActionPerformed
-
-    private void OpenText1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OpenText1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_OpenText1ActionPerformed
-
-    private void CloseTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CloseTextActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CloseTextActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -641,7 +560,6 @@ public class Head extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField CloseText;
     private javax.swing.JTextField ComEmail;
     private javax.swing.JTextField ComName;
     private javax.swing.JButton Disqualify;
@@ -650,14 +568,11 @@ public class Head extends javax.swing.JFrame {
     private javax.swing.JTextField ID;
     private javax.swing.JList<String> List;
     private javax.swing.JTextField Name;
-    private javax.swing.JLabel OpenClose;
-    private javax.swing.JTextField OpenText1;
     private javax.swing.JButton Return;
     private javax.swing.JButton Search;
     private javax.swing.JButton Select;
     private javax.swing.JTextField Title;
     private javax.swing.JButton Update;
-    private javax.swing.JButton UpdateDate;
     private javax.swing.JLabel found;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -668,9 +583,6 @@ public class Head extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
