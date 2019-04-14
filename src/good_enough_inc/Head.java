@@ -455,8 +455,6 @@ public class Head extends javax.swing.JFrame {
        E_Name.setText(Elections[selected].getName());
        ComName.setText(Elections[selected].getComName());
        ComEmail.setText(Elections[selected].getEmail());
-       if(Elections[selected].Status) OpenClose.setText("Open");
-       else OpenClose.setText("Closed");
        jFrame1.setSize(980, 569);
        jFrame1.getContentPane().setBackground(new java.awt.Color(255, 255, 255));
        jFrame1.setDefaultCloseOperation(EXIT_ON_CLOSE);
