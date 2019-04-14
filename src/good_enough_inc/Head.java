@@ -102,6 +102,8 @@ public class Head extends javax.swing.JFrame {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
+        jFrame1.setPreferredSize(new java.awt.Dimension(980, 580));
+
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setText("Email:");
 
@@ -551,14 +553,6 @@ public class Head extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TitleActionPerformed
 
-    private void OpenText1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OpenText1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_OpenText1ActionPerformed
-
-    private void CloseTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CloseTextActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CloseTextActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -583,12 +577,6 @@ public class Head extends javax.swing.JFrame {
         Elections[selected].Commissioner.email=ComEmail.getText();
     }//GEN-LAST:event_UpdateActionPerformed
 
-    private void UpdateDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateDateActionPerformed
-        // TODO add your handling code here:
-        Elections[selected].Status=false;
-        OpenClose.setText("Closed");
-    }//GEN-LAST:event_UpdateDateActionPerformed
-
     private void DisqualifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DisqualifyActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_DisqualifyActionPerformed
@@ -602,6 +590,20 @@ public class Head extends javax.swing.JFrame {
         if(ID.getText().equals("1234")) found.setText("Found");
         else found.setText("Not Found");
     }//GEN-LAST:event_SearchActionPerformed
+
+    private void UpdateDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateDateActionPerformed
+        // TODO add your handling code here:
+        Elections[selected].Status=false;
+        OpenClose.setText("Closed");
+    }//GEN-LAST:event_UpdateDateActionPerformed
+
+    private void OpenText1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OpenText1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OpenText1ActionPerformed
+
+    private void CloseTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CloseTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CloseTextActionPerformed
 
     /**
      * @param args the command line arguments
