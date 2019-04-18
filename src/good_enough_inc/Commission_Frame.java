@@ -44,79 +44,91 @@ public class Commission_Frame extends javax.swing.JFrame {
     private void initComponents() {
 
         Race_Editor = new javax.swing.JFrame();
-        Race = new javax.swing.JPanel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel21 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
-        jLabel23 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        Return = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        Item_Editor = new javax.swing.JPanel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        Add_Item = new javax.swing.JButton();
+        Edit_Item = new javax.swing.JButton();
+        Delete_Item = new javax.swing.JButton();
+        Save_Race = new javax.swing.JButton();
+        Return_Race = new javax.swing.JButton();
+        jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel25 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel26 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        Save_Item = new javax.swing.JButton();
         jLabel37 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         Ballot_Editor = new javax.swing.JFrame();
-        Select_Race2 = new javax.swing.JButton();
+        Add_Race = new javax.swing.JButton();
         jScrollPane6 = new javax.swing.JScrollPane();
-        Races2 = new javax.swing.JList<>();
-        BName2 = new javax.swing.JTextField();
+        Race_List = new javax.swing.JList<>();
+        Ballot_Name = new javax.swing.JTextField();
         jLabel43 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         Eligible3 = new javax.swing.JPanel();
-        Under_All3 = new javax.swing.JCheckBox();
-        Under_Part3 = new javax.swing.JCheckBox();
-        Under_Full3 = new javax.swing.JCheckBox();
-        Under_Online3 = new javax.swing.JCheckBox();
-        Grad_Online3 = new javax.swing.JCheckBox();
-        Grad_All3 = new javax.swing.JCheckBox();
-        Grad_Part3 = new javax.swing.JCheckBox();
-        Grad_Full3 = new javax.swing.JCheckBox();
+        Under_All = new javax.swing.JCheckBox();
+        Under_Part = new javax.swing.JCheckBox();
+        Under_Full = new javax.swing.JCheckBox();
+        Under_Online = new javax.swing.JCheckBox();
+        Grad_Online = new javax.swing.JCheckBox();
+        Grad_All = new javax.swing.JCheckBox();
+        Grad_Part = new javax.swing.JCheckBox();
+        Grad_Full = new javax.swing.JCheckBox();
         jLabel47 = new javax.swing.JLabel();
-        Freshman3 = new javax.swing.JCheckBox();
+        Freshman = new javax.swing.JCheckBox();
         Sophmore3 = new javax.swing.JCheckBox();
         Junior3 = new javax.swing.JCheckBox();
         Senior3 = new javax.swing.JCheckBox();
         jLabel48 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
-        Grad_Online4 = new javax.swing.JCheckBox();
-        Grad_All4 = new javax.swing.JCheckBox();
-        Grad_Part4 = new javax.swing.JCheckBox();
-        Grad_Full4 = new javax.swing.JCheckBox();
+        M3 = new javax.swing.JCheckBox();
+        M_All = new javax.swing.JCheckBox();
+        M2 = new javax.swing.JCheckBox();
+        M1 = new javax.swing.JCheckBox();
         jLabel51 = new javax.swing.JLabel();
-        Grad_Online5 = new javax.swing.JCheckBox();
-        Grad_All5 = new javax.swing.JCheckBox();
-        Grad_Part5 = new javax.swing.JCheckBox();
-        Grad_Full5 = new javax.swing.JCheckBox();
+        C3 = new javax.swing.JCheckBox();
+        College_All = new javax.swing.JCheckBox();
+        C2 = new javax.swing.JCheckBox();
+        C1 = new javax.swing.JCheckBox();
         jLabel52 = new javax.swing.JLabel();
-        Grad_All6 = new javax.swing.JCheckBox();
-        Grad_Part6 = new javax.swing.JCheckBox();
-        Grad_Full6 = new javax.swing.JCheckBox();
+        G_All = new javax.swing.JCheckBox();
+        Male = new javax.swing.JCheckBox();
+        Female = new javax.swing.JCheckBox();
         jLabel49 = new javax.swing.JLabel();
-        Select_Race4 = new javax.swing.JButton();
+        Edit_Race = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        Select_Race5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        Delete_Race = new javax.swing.JButton();
+        Return_Ballot = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        Item_Editor = new javax.swing.JFrame();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        Can_Name = new javax.swing.JTextField();
+        jLabel56 = new javax.swing.JLabel();
+        Can_Party = new javax.swing.JTextField();
+        Can_ID = new javax.swing.JTextField();
+        jLabel55 = new javax.swing.JLabel();
+        Return_Item = new javax.swing.JButton();
+        Save_Item = new javax.swing.JButton();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jLabel3 = new javax.swing.JLabel();
         Edit_Ballot = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
@@ -134,19 +146,51 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel28 = new javax.swing.JLabel();
         Open_Date1 = new javax.swing.JTextField();
         jLabel35 = new javax.swing.JLabel();
-        Edit_Ballot2 = new javax.swing.JButton();
+        Add_Ballot = new javax.swing.JButton();
         jLabel36 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
 
-        Race.setBackground(new java.awt.Color(255, 255, 255));
-        Race.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Race.setMaximumSize(new java.awt.Dimension(0, 0));
+        Race_Editor.getContentPane().setLayout(null);
+
+        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jTextField1.setText("Race Name");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        Race_Editor.getContentPane().add(jTextField1);
+        jTextField1.setBounds(10, 16, 206, 46);
+
+        jLabel41.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel41.setText("on the item in the list and press the coresponding button to the right of the list.");
+        Race_Editor.getContentPane().add(jLabel41);
+        jLabel41.setBounds(487, 80, 483, 17);
+
+        jLabel42.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel42.setText("without saving the changes, press 'Return'.");
+        Race_Editor.getContentPane().add(jLabel42);
+        jLabel42.setBounds(706, 126, 264, 17);
+
+        jLabel44.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel44.setText("To save your changes, press 'Save Race'.  To return to the previous page");
+        Race_Editor.getContentPane().add(jLabel44);
+        jLabel44.setBounds(519, 103, 451, 17);
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel30.setText("To edit the Race's Name use the box to the left.  To select the Race type, use the");
+        Race_Editor.getContentPane().add(jLabel30);
+        jLabel30.setBounds(473, 11, 497, 17);
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel31.setText("\"Race Type:\".  Under 'Allowing Write-Ins', please select whether you are allowing");
+        Race_Editor.getContentPane().add(jLabel31);
+        jLabel31.setBounds(482, 34, 488, 17);
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Plurality  (Choose-One Voting)", "Run-off", "Borda-Count", "Binary" }));
-
-        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
-        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel21.setText("Item Editor");
+        Race_Editor.getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(165, 221, 275, 28);
 
         jList1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
@@ -156,350 +200,203 @@ public class Commission_Frame extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jList1);
 
+        Race_Editor.getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(491, 210, 170, 198);
+
+        Add_Item.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Add_Item.setText("Add Item");
+        Add_Item.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Add_ItemActionPerformed(evt);
+            }
+        });
+        Race_Editor.getContentPane().add(Add_Item);
+        Add_Item.setBounds(679, 245, 137, 31);
+
+        Edit_Item.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Edit_Item.setText("Edit Item");
+        Edit_Item.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Edit_ItemActionPerformed(evt);
+            }
+        });
+        Race_Editor.getContentPane().add(Edit_Item);
+        Edit_Item.setBounds(679, 294, 137, 31);
+
+        Delete_Item.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Delete_Item.setText("Delete Item");
+        Race_Editor.getContentPane().add(Delete_Item);
+        Delete_Item.setBounds(679, 343, 137, 31);
+
+        Save_Race.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Save_Race.setText("Save Race");
+        Race_Editor.getContentPane().add(Save_Race);
+        Save_Race.setBounds(840, 521, 130, 48);
+
+        Return_Race.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Return_Race.setText("Return");
+        Return_Race.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Return_RaceActionPerformed(evt);
+            }
+        });
+        Race_Editor.getContentPane().add(Return_Race);
+        Return_Race.setBounds(10, 521, 130, 48);
+
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("Race Type");
+        jLabel23.setText("Allowing Write-ins");
+        Race_Editor.getContentPane().add(jLabel23);
+        jLabel23.setBounds(165, 267, 275, 27);
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jTextField1.setText("Race Name");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton3.setText("Edit Item");
-
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setText("Add Item");
-
-        jLabel27.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel27.setText("To edit the Race's Name use the box to the left.  To select the Race type, use the");
-
-        jLabel29.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel29.setText("\"Race Type:\".  To select an Item on the Ballot, click on the item's name and press");
-
-        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel30.setText("the \"Select Item\" button.  The item's Name, Party, and ID will appear in the their");
-
-        jLabel31.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel31.setText("coresponding boxes on the right.  Use the boxes to change the coresponding");
-
-        jLabel32.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel32.setText("information.  Press \"Update Item\" when done.  If you want to add a new item,");
-
-        jLabel33.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel33.setText("use the same boxes to add information, but then press \"Add Item\".  When done");
-
-        jLabel34.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel34.setText("editing the Race, press \"Save Race\", otherwise, none of your changes will be saved!");
-
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setText("Save Race");
-
-        Return.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Return.setText("Return");
-        Return.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ReturnActionPerformed(evt);
-            }
-        });
-
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton7.setText("Delete Item");
-
-        Item_Editor.setBackground(new java.awt.Color(255, 255, 255));
-        Item_Editor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel24.setText("Item Name:");
-
-        jTextField2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField2.setText("Name of Canidate");
-
-        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel25.setText("Item ID:");
-
-        jTextField3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField3.setText("ID# of Canidate");
-
-        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel26.setText("Item Party:");
-
-        jTextField4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField4.setText("Party of Canidate");
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
-            }
-        });
-
-        Save_Item.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Save_Item.setText("Save Item");
-        Save_Item.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Save_ItemActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout Item_EditorLayout = new javax.swing.GroupLayout(Item_Editor);
-        Item_Editor.setLayout(Item_EditorLayout);
-        Item_EditorLayout.setHorizontalGroup(
-            Item_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Item_EditorLayout.createSequentialGroup()
-                .addGroup(Item_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Item_EditorLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jLabel24)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Item_EditorLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(Item_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Item_EditorLayout.createSequentialGroup()
-                                .addComponent(jLabel26)
-                                .addGap(141, 141, 141))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Item_EditorLayout.createSequentialGroup()
-                                .addComponent(jLabel25)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(Save_Item, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap())
-        );
-        Item_EditorLayout.setVerticalGroup(
-            Item_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Item_EditorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(Item_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(Item_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel26)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addGroup(Item_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(Save_Item)
-                .addContainerGap())
-        );
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("Race Type");
+        Race_Editor.getContentPane().add(jLabel24);
+        jLabel24.setBounds(165, 177, 275, 27);
 
         jLabel37.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel37.setText("Items");
+        Race_Editor.getContentPane().add(jLabel37);
+        jLabel37.setBounds(491, 177, 170, 27);
 
-        javax.swing.GroupLayout RaceLayout = new javax.swing.GroupLayout(Race);
-        Race.setLayout(RaceLayout);
-        RaceLayout.setHorizontalGroup(
-            RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RaceLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RaceLayout.createSequentialGroup()
-                        .addComponent(Return, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(RaceLayout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel29)
-                            .addComponent(jLabel30)
-                            .addComponent(jLabel34)
-                            .addComponent(jLabel33)
-                            .addComponent(jLabel32)
-                            .addComponent(jLabel31)
-                            .addComponent(jLabel27)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RaceLayout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
-                        .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(RaceLayout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Item_Editor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(30, 30, 30)))
-                .addContainerGap())
-        );
-        RaceLayout.setVerticalGroup(
-            RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RaceLayout.createSequentialGroup()
-                .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RaceLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel29))
-                    .addGroup(RaceLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel30)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel31)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel32)
-                .addGap(4, 4, 4)
-                .addComponent(jLabel33)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel34)
-                .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RaceLayout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(jLabel23))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RaceLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel37, javax.swing.GroupLayout.Alignment.TRAILING))))
-                .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RaceLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Item_Editor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(RaceLayout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(RaceLayout.createSequentialGroup()
-                                .addComponent(jButton4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton3))
-                            .addGroup(RaceLayout.createSequentialGroup()
-                                .addGap(88, 88, 88)
-                                .addComponent(jButton7)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                .addGroup(RaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Return, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
+        jRadioButton1.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(jRadioButton1);
+        jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton1.setText("Allowed");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
+        Race_Editor.getContentPane().add(jRadioButton1);
+        jRadioButton1.setBounds(165, 312, 87, 31);
 
-        javax.swing.GroupLayout Race_EditorLayout = new javax.swing.GroupLayout(Race_Editor.getContentPane());
-        Race_Editor.getContentPane().setLayout(Race_EditorLayout);
-        Race_EditorLayout.setHorizontalGroup(
-            Race_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Race, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        Race_EditorLayout.setVerticalGroup(
-            Race_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Race, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        jRadioButton2.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(jRadioButton2);
+        jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton2.setText("Not Allowed");
+        Race_Editor.getContentPane().add(jRadioButton2);
+        jRadioButton2.setBounds(319, 312, 121, 31);
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setText(" write-ins for this race.  To add an item, press 'Add Item'.  To edit or delete an item, click");
+        Race_Editor.getContentPane().add(jLabel4);
+        jLabel4.setBounds(437, 57, 533, 17);
+
+        jLabel75.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        Race_Editor.getContentPane().add(jLabel75);
+        jLabel75.setBounds(0, 0, 960, 580);
 
         jLabel19.setText("jLabel19");
 
-        Select_Race2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Select_Race2.setText("Add Race");
-        Select_Race2.addActionListener(new java.awt.event.ActionListener() {
+        Ballot_Editor.getContentPane().setLayout(null);
+
+        Add_Race.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Add_Race.setText("Add Race");
+        Add_Race.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Select_Race2ActionPerformed(evt);
+                Add_RaceActionPerformed(evt);
             }
         });
+        Ballot_Editor.getContentPane().add(Add_Race);
+        Add_Race.setBounds(692, 251, 133, 44);
 
-        Races2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Races2.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "John Doe", "Dr. Blink", "Amendment 56" };
+        Race_List.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Race_List.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Race 1", "Race 2", "Race 3" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane6.setViewportView(Races2);
+        jScrollPane6.setViewportView(Race_List);
 
-        BName2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        BName2.setText("Ballot Name");
+        Ballot_Editor.getContentPane().add(jScrollPane6);
+        jScrollPane6.setBounds(486, 167, 188, 335);
+
+        Ballot_Name.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Ballot_Name.setText("Ballot Name");
+        Ballot_Editor.getContentPane().add(Ballot_Name);
+        Ballot_Name.setBounds(10, 11, 173, 44);
 
         jLabel43.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel43.setText("Races");
+        Ballot_Editor.getContentPane().add(jLabel43);
+        jLabel43.setBounds(486, 132, 188, 29);
 
         Eligible3.setBackground(new java.awt.Color(255, 255, 255));
 
-        Under_All3.setBackground(new java.awt.Color(255, 255, 255));
-        Under_All3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Under_All3.setText("Undergraduate Students");
-        Under_All3.addActionListener(new java.awt.event.ActionListener() {
+        Under_All.setBackground(new java.awt.Color(255, 255, 255));
+        Under_All.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Under_All.setText("Undergraduate Students");
+        Under_All.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Under_All3ActionPerformed(evt);
+                Under_AllActionPerformed(evt);
             }
         });
 
-        Under_Part3.setBackground(new java.awt.Color(255, 255, 255));
-        Under_Part3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Under_Part3.setText("Part-Time");
-        Under_Part3.addActionListener(new java.awt.event.ActionListener() {
+        Under_Part.setBackground(new java.awt.Color(255, 255, 255));
+        Under_Part.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Under_Part.setText("Part-Time");
+        Under_Part.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Under_Part3ActionPerformed(evt);
+                Under_PartActionPerformed(evt);
             }
         });
 
-        Under_Full3.setBackground(new java.awt.Color(255, 255, 255));
-        Under_Full3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Under_Full3.setText("Full-Time");
-        Under_Full3.addActionListener(new java.awt.event.ActionListener() {
+        Under_Full.setBackground(new java.awt.Color(255, 255, 255));
+        Under_Full.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Under_Full.setText("Full-Time");
+        Under_Full.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Under_Full3ActionPerformed(evt);
+                Under_FullActionPerformed(evt);
             }
         });
 
-        Under_Online3.setBackground(new java.awt.Color(255, 255, 255));
-        Under_Online3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Under_Online3.setText("Online");
-        Under_Online3.addActionListener(new java.awt.event.ActionListener() {
+        Under_Online.setBackground(new java.awt.Color(255, 255, 255));
+        Under_Online.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Under_Online.setText("Online");
+        Under_Online.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Under_Online3ActionPerformed(evt);
+                Under_OnlineActionPerformed(evt);
             }
         });
 
-        Grad_Online3.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Online3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Online3.setText("Online");
-        Grad_Online3.addActionListener(new java.awt.event.ActionListener() {
+        Grad_Online.setBackground(new java.awt.Color(255, 255, 255));
+        Grad_Online.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Grad_Online.setText("Online");
+        Grad_Online.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Online3ActionPerformed(evt);
+                Grad_OnlineActionPerformed(evt);
             }
         });
 
-        Grad_All3.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_All3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_All3.setText("Graduate Students");
-        Grad_All3.addActionListener(new java.awt.event.ActionListener() {
+        Grad_All.setBackground(new java.awt.Color(255, 255, 255));
+        Grad_All.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Grad_All.setText("Graduate Students");
+        Grad_All.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_All3ActionPerformed(evt);
+                Grad_AllActionPerformed(evt);
             }
         });
 
-        Grad_Part3.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Part3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Part3.setText("Part-Time");
-        Grad_Part3.addActionListener(new java.awt.event.ActionListener() {
+        Grad_Part.setBackground(new java.awt.Color(255, 255, 255));
+        Grad_Part.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Grad_Part.setText("Part-Time");
+        Grad_Part.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Part3ActionPerformed(evt);
+                Grad_PartActionPerformed(evt);
             }
         });
 
-        Grad_Full3.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Full3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Full3.setText("Full-Time");
-        Grad_Full3.addActionListener(new java.awt.event.ActionListener() {
+        Grad_Full.setBackground(new java.awt.Color(255, 255, 255));
+        Grad_Full.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Grad_Full.setText("Full-Time");
+        Grad_Full.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Full3ActionPerformed(evt);
+                Grad_FullActionPerformed(evt);
             }
         });
 
@@ -508,12 +405,12 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel47.setText(" Class Ranks");
 
-        Freshman3.setBackground(new java.awt.Color(255, 255, 255));
-        Freshman3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Freshman3.setText("Freshmen");
-        Freshman3.addActionListener(new java.awt.event.ActionListener() {
+        Freshman.setBackground(new java.awt.Color(255, 255, 255));
+        Freshman.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Freshman.setText("Freshmen");
+        Freshman.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Freshman3ActionPerformed(evt);
+                FreshmanActionPerformed(evt);
             }
         });
 
@@ -553,39 +450,39 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel50.setText(" Majors");
 
-        Grad_Online4.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Online4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Online4.setText("Computer Science");
-        Grad_Online4.addActionListener(new java.awt.event.ActionListener() {
+        M3.setBackground(new java.awt.Color(255, 255, 255));
+        M3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        M3.setText("Computer Science");
+        M3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Online4ActionPerformed(evt);
+                M3ActionPerformed(evt);
             }
         });
 
-        Grad_All4.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_All4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_All4.setText("Select All");
-        Grad_All4.addActionListener(new java.awt.event.ActionListener() {
+        M_All.setBackground(new java.awt.Color(255, 255, 255));
+        M_All.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        M_All.setText("Select All");
+        M_All.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_All4ActionPerformed(evt);
+                M_AllActionPerformed(evt);
             }
         });
 
-        Grad_Part4.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Part4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Part4.setText("Computer Engineering");
-        Grad_Part4.addActionListener(new java.awt.event.ActionListener() {
+        M2.setBackground(new java.awt.Color(255, 255, 255));
+        M2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        M2.setText("Computer Engineering");
+        M2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Part4ActionPerformed(evt);
+                M2ActionPerformed(evt);
             }
         });
 
-        Grad_Full4.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Full4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Full4.setText("Mathematics");
-        Grad_Full4.addActionListener(new java.awt.event.ActionListener() {
+        M1.setBackground(new java.awt.Color(255, 255, 255));
+        M1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        M1.setText("Mathematics");
+        M1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Full4ActionPerformed(evt);
+                M1ActionPerformed(evt);
             }
         });
 
@@ -594,39 +491,39 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel51.setText(" Colleges");
 
-        Grad_Online5.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Online5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Online5.setText("College of Chemistry");
-        Grad_Online5.addActionListener(new java.awt.event.ActionListener() {
+        C3.setBackground(new java.awt.Color(255, 255, 255));
+        C3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        C3.setText("College of Chemistry");
+        C3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Online5ActionPerformed(evt);
+                C3ActionPerformed(evt);
             }
         });
 
-        Grad_All5.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_All5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_All5.setText("Select All");
-        Grad_All5.addActionListener(new java.awt.event.ActionListener() {
+        College_All.setBackground(new java.awt.Color(255, 255, 255));
+        College_All.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        College_All.setText("Select All");
+        College_All.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_All5ActionPerformed(evt);
+                College_AllActionPerformed(evt);
             }
         });
 
-        Grad_Part5.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Part5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Part5.setText("College of Engineering");
-        Grad_Part5.addActionListener(new java.awt.event.ActionListener() {
+        C2.setBackground(new java.awt.Color(255, 255, 255));
+        C2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        C2.setText("College of Engineering");
+        C2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Part5ActionPerformed(evt);
+                C2ActionPerformed(evt);
             }
         });
 
-        Grad_Full5.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Full5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Full5.setText("College of Education");
-        Grad_Full5.addActionListener(new java.awt.event.ActionListener() {
+        C1.setBackground(new java.awt.Color(255, 255, 255));
+        C1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        C1.setText("College of Education");
+        C1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Full5ActionPerformed(evt);
+                C1ActionPerformed(evt);
             }
         });
 
@@ -635,30 +532,30 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel52.setText("Gender");
 
-        Grad_All6.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_All6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_All6.setText("Select All");
-        Grad_All6.addActionListener(new java.awt.event.ActionListener() {
+        G_All.setBackground(new java.awt.Color(255, 255, 255));
+        G_All.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        G_All.setText("Select All");
+        G_All.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_All6ActionPerformed(evt);
+                G_AllActionPerformed(evt);
             }
         });
 
-        Grad_Part6.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Part6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Part6.setText("Male");
-        Grad_Part6.addActionListener(new java.awt.event.ActionListener() {
+        Male.setBackground(new java.awt.Color(255, 255, 255));
+        Male.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Male.setText("Male");
+        Male.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Part6ActionPerformed(evt);
+                MaleActionPerformed(evt);
             }
         });
 
-        Grad_Full6.setBackground(new java.awt.Color(255, 255, 255));
-        Grad_Full6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Grad_Full6.setText("Female");
-        Grad_Full6.addActionListener(new java.awt.event.ActionListener() {
+        Female.setBackground(new java.awt.Color(255, 255, 255));
+        Female.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Female.setText("Female");
+        Female.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Grad_Full6ActionPerformed(evt);
+                FemaleActionPerformed(evt);
             }
         });
 
@@ -680,49 +577,49 @@ public class Commission_Frame extends javax.swing.JFrame {
                                     .addGroup(Eligible3Layout.createSequentialGroup()
                                         .addGap(27, 27, 27)
                                         .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Under_Full3)
-                                            .addComponent(Under_Part3)
-                                            .addComponent(Under_Online3)))
-                                    .addComponent(Grad_All3)
+                                            .addComponent(Under_Full)
+                                            .addComponent(Under_Part)
+                                            .addComponent(Under_Online)))
+                                    .addComponent(Grad_All)
                                     .addGroup(Eligible3Layout.createSequentialGroup()
                                         .addGap(31, 31, 31)
                                         .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Grad_Part3)
-                                            .addComponent(Grad_Full3)
-                                            .addComponent(Grad_Online3)))
-                                    .addComponent(Freshman3)
+                                            .addComponent(Grad_Part)
+                                            .addComponent(Grad_Full)
+                                            .addComponent(Grad_Online)))
+                                    .addComponent(Freshman)
                                     .addComponent(Sophmore3)
                                     .addComponent(Junior3)
                                     .addComponent(Senior3)
-                                    .addComponent(Under_All3)
+                                    .addComponent(Under_All)
                                     .addGroup(Eligible3Layout.createSequentialGroup()
                                         .addGap(41, 41, 41)
                                         .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Grad_Part5)
-                                            .addComponent(Grad_Full5)
-                                            .addComponent(Grad_Online5)))
+                                            .addComponent(C2)
+                                            .addComponent(C1)
+                                            .addComponent(C3)))
                                     .addGroup(Eligible3Layout.createSequentialGroup()
                                         .addGap(10, 10, 10)
-                                        .addComponent(Grad_All6)))
+                                        .addComponent(G_All)))
                                 .addGap(0, 20, Short.MAX_VALUE))))
                     .addGroup(Eligible3Layout.createSequentialGroup()
                         .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(Eligible3Layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Grad_All4)
+                                    .addComponent(M_All)
                                     .addGroup(Eligible3Layout.createSequentialGroup()
                                         .addGap(31, 31, 31)
                                         .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Grad_Part4)
-                                            .addComponent(Grad_Full4)
-                                            .addComponent(Grad_Online4)))
-                                    .addComponent(Grad_All5)))
+                                            .addComponent(M2)
+                                            .addComponent(M1)
+                                            .addComponent(M3)))
+                                    .addComponent(College_All)))
                             .addGroup(Eligible3Layout.createSequentialGroup()
                                 .addGap(51, 51, 51)
                                 .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Grad_Part6)
-                                    .addComponent(Grad_Full6)))
+                                    .addComponent(Male)
+                                    .addComponent(Female)))
                             .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -733,25 +630,25 @@ public class Commission_Frame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel48)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Under_All3)
+                .addComponent(Under_All)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Under_Part3)
+                .addComponent(Under_Part)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Under_Full3)
+                .addComponent(Under_Full)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Under_Online3)
+                .addComponent(Under_Online)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_All3)
+                .addComponent(Grad_All)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Full3)
+                .addComponent(Grad_Full)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Part3)
+                .addComponent(Grad_Part)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Online3)
+                .addComponent(Grad_Online)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel47)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Freshman3)
+                .addComponent(Freshman)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Sophmore3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -761,162 +658,206 @@ public class Commission_Frame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel50)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Grad_All4)
+                .addComponent(M_All)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Full4)
+                .addComponent(M1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Part4)
+                .addComponent(M2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Online4)
+                .addComponent(M3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel51)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Grad_All5)
+                .addComponent(College_All)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Full5)
+                .addComponent(C1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Part5)
+                .addComponent(C2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Online5)
+                .addComponent(C3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel52)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Grad_All6)
+                .addComponent(G_All)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Full6)
+                .addComponent(Female)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Grad_Part6)
+                .addComponent(Male)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(Eligible3);
 
+        Ballot_Editor.getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(186, 167, 242, 335);
+
         jLabel49.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel49.setText("Eligible Students");
+        Ballot_Editor.getContentPane().add(jLabel49);
+        jLabel49.setBounds(186, 132, 232, 29);
 
-        Select_Race4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Select_Race4.setText("Edit Race");
-        Select_Race4.addActionListener(new java.awt.event.ActionListener() {
+        Edit_Race.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Edit_Race.setText("Edit Race");
+        Edit_Race.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Select_Race4ActionPerformed(evt);
+                Edit_RaceActionPerformed(evt);
             }
         });
+        Ballot_Editor.getContentPane().add(Edit_Race);
+        Edit_Race.setBounds(692, 313, 133, 44);
 
-        jButton5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton5.setText("Submit");
+        Ballot_Editor.getContentPane().add(jButton5);
+        jButton5.setBounds(838, 508, 132, 61);
 
-        Select_Race5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Select_Race5.setText("Delete Race");
-        Select_Race5.addActionListener(new java.awt.event.ActionListener() {
+        Delete_Race.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Delete_Race.setText("Delete Race");
+        Delete_Race.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Select_Race5ActionPerformed(evt);
+                Delete_RaceActionPerformed(evt);
             }
         });
+        Ballot_Editor.getContentPane().add(Delete_Race);
+        Delete_Race.setBounds(692, 375, 133, 44);
 
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton6.setText("Return");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        Return_Ballot.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Return_Ballot.setText("Return");
+        Return_Ballot.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                Return_BallotActionPerformed(evt);
             }
         });
+        Ballot_Editor.getContentPane().add(Return_Ballot);
+        Return_Ballot.setBounds(19, 508, 132, 61);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("Use to check boxes located under 'Eligible Students' to");
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setText("Please use the box on the left to edit the Ballot's name.  To select Eligible");
+        Ballot_Editor.getContentPane().add(jLabel2);
+        jLabel2.setBounds(531, 11, 439, 17);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setText("Please use the box on the left to edit the Ballot's name.");
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel6.setText("voters, use the check boxes under 'Eligible Students'.  Press 'Add Race'");
+        Ballot_Editor.getContentPane().add(jLabel6);
+        jLabel6.setBounds(537, 34, 433, 17);
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel4.setText("to select the eligible voters.  To add a race, press 'Add");
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel7.setText("from the list and press the coresponding button on the right.  When");
+        Ballot_Editor.getContentPane().add(jLabel7);
+        jLabel7.setBounds(553, 80, 417, 17);
 
-        javax.swing.GroupLayout Ballot_EditorLayout = new javax.swing.GroupLayout(Ballot_Editor.getContentPane());
-        Ballot_Editor.getContentPane().setLayout(Ballot_EditorLayout);
-        Ballot_EditorLayout.setHorizontalGroup(
-            Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Ballot_EditorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Ballot_EditorLayout.createSequentialGroup()
-                        .addGap(0, 176, Short.MAX_VALUE)
-                        .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Ballot_EditorLayout.createSequentialGroup()
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap())
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Ballot_EditorLayout.createSequentialGroup()
-                                .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jScrollPane2)
-                                    .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(58, 58, 58)
-                                .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel43, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Select_Race2, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Select_Race4, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Select_Race5, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(155, 155, 155))))
-                    .addGroup(Ballot_EditorLayout.createSequentialGroup()
-                        .addComponent(BName2, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4))
-                        .addGap(21, 21, 21))))
-            .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(Ballot_EditorLayout.createSequentialGroup()
-                    .addGap(20, 20, 20)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(828, Short.MAX_VALUE)))
-        );
-        Ballot_EditorLayout.setVerticalGroup(
-            Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Ballot_EditorLayout.createSequentialGroup()
-                .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Ballot_EditorLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(BName2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Ballot_EditorLayout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel49, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel43))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Ballot_EditorLayout.createSequentialGroup()
-                        .addComponent(Select_Race2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Select_Race4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Select_Race5, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(83, 83, 83))
-                    .addComponent(jScrollPane6)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(Ballot_EditorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Ballot_EditorLayout.createSequentialGroup()
-                    .addContainerGap(498, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(21, 21, 21)))
-        );
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel12.setText("to go to the 'Race Creator' page.  To edit or delete a race, select the race");
+        Ballot_Editor.getContentPane().add(jLabel12);
+        jLabel12.setBounds(524, 57, 446, 17);
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel13.setText("finished editing the ballot, press 'Submit', otherwise, changes will not save.");
+        Ballot_Editor.getContentPane().add(jLabel13);
+        jLabel13.setBounds(522, 103, 448, 17);
+
+        jLabel74.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        Ballot_Editor.getContentPane().add(jLabel74);
+        jLabel74.setBounds(0, 0, 960, 580);
+
+        Item_Editor.getContentPane().setLayout(null);
+
+        jLabel45.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel45.setText("Please enter the Item's Name, Party, and ID number");
+        Item_Editor.getContentPane().add(jLabel45);
+        jLabel45.setBounds(556, 11, 414, 22);
+
+        jLabel54.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel54.setText("Item Name:");
+        Item_Editor.getContentPane().add(jLabel54);
+        jLabel54.setBounds(253, 183, 128, 29);
+
+        Can_Name.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Can_Name.setText("Name of Canidate");
+        Can_Name.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Can_NameActionPerformed(evt);
+            }
+        });
+        Item_Editor.getContentPane().add(Can_Name);
+        Can_Name.setBounds(399, 179, 326, 37);
+
+        jLabel56.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel56.setText("Item Party:");
+        Item_Editor.getContentPane().add(jLabel56);
+        jLabel56.setBounds(260, 260, 121, 29);
+
+        Can_Party.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Can_Party.setText("Party of Canidate");
+        Can_Party.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Can_PartyActionPerformed(evt);
+            }
+        });
+        Item_Editor.getContentPane().add(Can_Party);
+        Can_Party.setBounds(399, 257, 326, 35);
+
+        Can_ID.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Can_ID.setText("ID# of Canidate");
+        Item_Editor.getContentPane().add(Can_ID);
+        Can_ID.setBounds(399, 334, 326, 40);
+
+        jLabel55.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel55.setText("Item ID:");
+        Item_Editor.getContentPane().add(jLabel55);
+        jLabel55.setBounds(290, 339, 91, 29);
+
+        Return_Item.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Return_Item.setText("Return");
+        Return_Item.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Return_ItemActionPerformed(evt);
+            }
+        });
+        Item_Editor.getContentPane().add(Return_Item);
+        Return_Item.setBounds(10, 521, 130, 48);
+
+        Save_Item.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Save_Item.setText("Save Item");
+        Item_Editor.getContentPane().add(Save_Item);
+        Save_Item.setBounds(840, 521, 130, 48);
+
+        jLabel46.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel46.setText("in the labeled boxes below.  When finished, press");
+        Item_Editor.getContentPane().add(jLabel46);
+        jLabel46.setBounds(579, 39, 391, 22);
+
+        jLabel53.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel53.setText("press 'Return' to go back to the previous page.");
+        Item_Editor.getContentPane().add(jLabel53);
+        jLabel53.setBounds(599, 98, 371, 22);
+
+        jLabel57.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel57.setText("'Save Item'.  If you would not like to save the item,");
+        Item_Editor.getContentPane().add(jLabel57);
+        jLabel57.setBounds(561, 70, 409, 22);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setText("Item Creator");
+        Item_Editor.getContentPane().add(jLabel1);
+        jLabel1.setBounds(10, 11, 137, 29);
+
+        jLabel73.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        Item_Editor.getContentPane().add(jLabel73);
+        jLabel73.setBounds(0, 0, 960, 580);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().setLayout(null);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Ballots");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(257, 184, 185, 29);
 
         Edit_Ballot.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Edit_Ballot.setText("Edit Ballot");
@@ -925,6 +866,8 @@ public class Commission_Frame extends javax.swing.JFrame {
                 Edit_BallotActionPerformed(evt);
             }
         });
+        getContentPane().add(Edit_Ballot);
+        Edit_Ballot.setBounds(71, 299, 180, 53);
 
         Ballots.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Ballots.setModel(new javax.swing.AbstractListModel<String>() {
@@ -934,23 +877,38 @@ public class Commission_Frame extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(Ballots);
 
+        getContentPane().add(jScrollPane4);
+        jScrollPane4.setBounds(257, 219, 185, 206);
+
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 179, 80);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Election Commissioner Page");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(185, 11, 617, 35);
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel22.setText("To edit/create ballots in an election, select one from the");
+        getContentPane().add(jLabel22);
+        jLabel22.setBounds(634, 57, 336, 17);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("list and press \"Select Election\".  To edit a ballot, select a");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(635, 80, 335, 17);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("ballot, press \"Create Ballot\".");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(802, 126, 168, 17);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel11.setText("ballot from the list and press \"Edit Ballot\".  To create a");
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(643, 103, 327, 17);
 
         Edit_Ballot1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Edit_Ballot1.setText("Remove Ballot");
@@ -959,6 +917,8 @@ public class Commission_Frame extends javax.swing.JFrame {
                 Edit_Ballot1ActionPerformed(evt);
             }
         });
+        getContentPane().add(Edit_Ballot1);
+        Edit_Ballot1.setBounds(71, 372, 180, 53);
 
         Dates1.setBackground(new java.awt.Color(255, 255, 255));
         Dates1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1022,88 +982,29 @@ public class Commission_Frame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        Edit_Ballot2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Edit_Ballot2.setText("Add Ballot");
-        Edit_Ballot2.addActionListener(new java.awt.event.ActionListener() {
+        getContentPane().add(Dates1);
+        Dates1.setBounds(485, 219, 276, 145);
+
+        Add_Ballot.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Add_Ballot.setText("Add Ballot");
+        Add_Ballot.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Edit_Ballot2ActionPerformed(evt);
+                Add_BallotActionPerformed(evt);
             }
         });
+        getContentPane().add(Add_Ballot);
+        Add_Ballot.setBounds(71, 219, 180, 53);
 
         jLabel36.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel36.setText("Open/Close Dates");
+        getContentPane().add(jLabel36);
+        jLabel36.setBounds(493, 184, 268, 29);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 617, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel22)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel10))
-                        .addContainerGap())))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(106, 106, 106)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(Edit_Ballot1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Edit_Ballot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Edit_Ballot2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(51, 51, 51)
-                        .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(43, 43, 43)
-                        .addComponent(Dates1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(219, 219, 219))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel22)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel10))
-                    .addComponent(jLabel5))
-                .addGap(41, 41, 41)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel36))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Dates1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(Edit_Ballot2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Edit_Ballot, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(Edit_Ballot1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(153, Short.MAX_VALUE))
-        );
+        jLabel76.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        getContentPane().add(jLabel76);
+        jLabel76.setBounds(0, 0, 960, 580);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1111,20 +1012,6 @@ public class Commission_Frame extends javax.swing.JFrame {
     private void Edit_Ballot1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edit_Ballot1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Edit_Ballot1ActionPerformed
-
-    private void ReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReturnActionPerformed
-        // TODO add your handling code here:
-        Race_Editor.setVisible(false);
-        Ballot_Editor.setVisible(true);
-    }//GEN-LAST:event_ReturnActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
 
     private void Close_Date1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Close_Date1ActionPerformed
         // TODO add your handling code here:
@@ -1134,13 +1021,23 @@ public class Commission_Frame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Open_Date1ActionPerformed
 
-    private void Edit_Ballot2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edit_Ballot2ActionPerformed
+    private void Add_BallotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add_BallotActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Edit_Ballot2ActionPerformed
+        Ballot_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        Race_List.removeAll();
+        Ballot_Name.setText("Ballot Name");
+        Ballot_Editor.setSize(1000, 610);
+        Ballot_Editor.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_Add_BallotActionPerformed
 
-    private void Select_Race2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_Race2ActionPerformed
+    private void Add_RaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add_RaceActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Select_Race2ActionPerformed
+        Race_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        Race_Editor.setSize(1000, 610);
+        Race_Editor.setVisible(true);
+        Ballot_Editor.setVisible(false);
+    }//GEN-LAST:event_Add_RaceActionPerformed
 
     private void Senior3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Senior3ActionPerformed
         // TODO add your handling code here:
@@ -1154,115 +1051,204 @@ public class Commission_Frame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Sophmore3ActionPerformed
 
-    private void Freshman3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Freshman3ActionPerformed
+    private void FreshmanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FreshmanActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Freshman3ActionPerformed
+    }//GEN-LAST:event_FreshmanActionPerformed
 
-    private void Grad_Full3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Full3ActionPerformed
+    private void Grad_FullActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_FullActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Full3ActionPerformed
+    }//GEN-LAST:event_Grad_FullActionPerformed
 
-    private void Grad_Part3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Part3ActionPerformed
+    private void Grad_PartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_PartActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Part3ActionPerformed
+    }//GEN-LAST:event_Grad_PartActionPerformed
 
-    private void Grad_All3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_All3ActionPerformed
+    private void Grad_AllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_AllActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_All3ActionPerformed
+        if(Grad_All.isSelected()) {
+            Grad_Full.setSelected(true);
+            Grad_Part.setSelected(true);
+            Grad_Online.setSelected(true);
+        }
+        else{
+            Grad_Full.setSelected(false);
+            Grad_Part.setSelected(false);
+            Grad_Online.setSelected(false);
+        }
+    }//GEN-LAST:event_Grad_AllActionPerformed
 
-    private void Grad_Online3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Online3ActionPerformed
+    private void Grad_OnlineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_OnlineActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Online3ActionPerformed
+    }//GEN-LAST:event_Grad_OnlineActionPerformed
 
-    private void Under_Online3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Under_Online3ActionPerformed
+    private void Under_OnlineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Under_OnlineActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Under_Online3ActionPerformed
+    }//GEN-LAST:event_Under_OnlineActionPerformed
 
-    private void Under_Full3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Under_Full3ActionPerformed
+    private void Under_FullActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Under_FullActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Under_Full3ActionPerformed
+    }//GEN-LAST:event_Under_FullActionPerformed
 
-    private void Under_Part3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Under_Part3ActionPerformed
+    private void Under_PartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Under_PartActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Under_Part3ActionPerformed
+    }//GEN-LAST:event_Under_PartActionPerformed
 
-    private void Under_All3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Under_All3ActionPerformed
+    private void Under_AllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Under_AllActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Under_All3ActionPerformed
+        if(Under_All.isSelected()) {
+            Under_Full.setSelected(true);
+            Under_Part.setSelected(true);
+            Under_Online.setSelected(true);
+        }
+        else{
+            Under_Full.setSelected(false);
+            Under_Part.setSelected(false);
+            Under_Online.setSelected(false);
+        }
+        
+    }//GEN-LAST:event_Under_AllActionPerformed
 
-    private void Grad_Online4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Online4ActionPerformed
+    private void M3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_M3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Online4ActionPerformed
+    }//GEN-LAST:event_M3ActionPerformed
 
-    private void Grad_All4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_All4ActionPerformed
+    private void M_AllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_M_AllActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_All4ActionPerformed
+        if(M_All.isSelected()) {
+            M1.setSelected(true);
+            M2.setSelected(true);
+            M3.setSelected(true);
+        }
+        else{
+            M1.setSelected(false);
+            M2.setSelected(false);
+            M3.setSelected(false);
+        }
+    }//GEN-LAST:event_M_AllActionPerformed
 
-    private void Grad_Part4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Part4ActionPerformed
+    private void M2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_M2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Part4ActionPerformed
+    }//GEN-LAST:event_M2ActionPerformed
 
-    private void Grad_Full4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Full4ActionPerformed
+    private void M1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_M1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Full4ActionPerformed
+    }//GEN-LAST:event_M1ActionPerformed
 
-    private void Grad_Online5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Online5ActionPerformed
+    private void C3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Online5ActionPerformed
+    }//GEN-LAST:event_C3ActionPerformed
 
-    private void Grad_All5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_All5ActionPerformed
+    private void College_AllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_College_AllActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_All5ActionPerformed
+        if(College_All.isSelected()) {
+            C1.setSelected(true);
+            C2.setSelected(true);
+            C3.setSelected(true);
+        }
+        else{
+            C1.setSelected(false);
+            C2.setSelected(false);
+            C3.setSelected(false);
+        }
+    }//GEN-LAST:event_College_AllActionPerformed
 
-    private void Grad_Part5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Part5ActionPerformed
+    private void C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Part5ActionPerformed
+    }//GEN-LAST:event_C2ActionPerformed
 
-    private void Grad_Full5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Full5ActionPerformed
+    private void C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Full5ActionPerformed
+    }//GEN-LAST:event_C1ActionPerformed
 
-    private void Grad_All6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_All6ActionPerformed
+    private void G_AllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G_AllActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_All6ActionPerformed
+        if(G_All.isSelected()) {
+            Male.setSelected(true);
+            Female.setSelected(true);
+        }
+        else{
+            Male.setSelected(false);
+            Female.setSelected(false);
+        }
+    }//GEN-LAST:event_G_AllActionPerformed
 
-    private void Grad_Part6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Part6ActionPerformed
+    private void MaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaleActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Part6ActionPerformed
+    }//GEN-LAST:event_MaleActionPerformed
 
-    private void Grad_Full6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grad_Full6ActionPerformed
+    private void FemaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FemaleActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Grad_Full6ActionPerformed
+    }//GEN-LAST:event_FemaleActionPerformed
 
-    private void Select_Race4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_Race4ActionPerformed
+    private void Edit_RaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edit_RaceActionPerformed
         // TODO add your handling code here:
-        Ballot_Editor.setVisible(false);
         Race_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
-        Race_Editor.setSize(Ballot_Editor.getPreferredSize());
+        Race_Editor.setSize(1000, 610);
         Race_Editor.setVisible(true);
-    }//GEN-LAST:event_Select_Race4ActionPerformed
+        Ballot_Editor.setVisible(false);
+    }//GEN-LAST:event_Edit_RaceActionPerformed
 
-    private void Select_Race5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_Race5ActionPerformed
+    private void Delete_RaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_RaceActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Select_Race5ActionPerformed
+    }//GEN-LAST:event_Delete_RaceActionPerformed
 
     private void Edit_BallotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edit_BallotActionPerformed
         // TODO add your handling code here:
-        this.setVisible(false);
         Ballot_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
-        Ballot_Editor.setSize(Ballot_Editor.getPreferredSize());
+        Ballot_Editor.setSize(1000, 610);
         Ballot_Editor.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_Edit_BallotActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void Return_BallotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return_BallotActionPerformed
         // TODO add your handling code here:
-        Ballot_Editor.setVisible(false);
         this.setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
+        Ballot_Editor.setVisible(false);
+    }//GEN-LAST:event_Return_BallotActionPerformed
 
-    private void Save_ItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save_ItemActionPerformed
+    private void Can_PartyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Can_PartyActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Save_ItemActionPerformed
+    }//GEN-LAST:event_Can_PartyActionPerformed
+
+    private void Return_ItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return_ItemActionPerformed
+        // TODO add your handling code here:
+        Race_Editor.setVisible(true);
+        Item_Editor.setVisible(false);
+    }//GEN-LAST:event_Return_ItemActionPerformed
+
+    private void Return_RaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return_RaceActionPerformed
+        // TODO add your handling code here:
+        Ballot_Editor.setVisible(true);
+        Race_Editor.setVisible(false);
+    }//GEN-LAST:event_Return_RaceActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void Add_ItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add_ItemActionPerformed
+        // TODO add your handling code here:
+        Item_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        Item_Editor.setSize(1000, 610);
+        Item_Editor.setVisible(true);
+        Race_Editor.setVisible(false);
+    }//GEN-LAST:event_Add_ItemActionPerformed
+
+    private void Can_NameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Can_NameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Can_NameActionPerformed
+
+    private void Edit_ItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edit_ItemActionPerformed
+        // TODO add your handling code here:
+         Item_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        Item_Editor.setSize(1000, 610);
+        Item_Editor.setVisible(true);
+        Race_Editor.setVisible(false);
+    }//GEN-LAST:event_Edit_ItemActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1300,81 +1286,84 @@ public class Commission_Frame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField BName2;
+    private javax.swing.JButton Add_Ballot;
+    private javax.swing.JButton Add_Item;
+    private javax.swing.JButton Add_Race;
     private javax.swing.JFrame Ballot_Editor;
+    private javax.swing.JTextField Ballot_Name;
     private javax.swing.JList<String> Ballots;
+    private javax.swing.JCheckBox C1;
+    private javax.swing.JCheckBox C2;
+    private javax.swing.JCheckBox C3;
+    private javax.swing.JTextField Can_ID;
+    private javax.swing.JTextField Can_Name;
+    private javax.swing.JTextField Can_Party;
     private javax.swing.JTextField Close_Date1;
+    private javax.swing.JCheckBox College_All;
     private javax.swing.JPanel Dates1;
+    private javax.swing.JButton Delete_Item;
+    private javax.swing.JButton Delete_Race;
     private javax.swing.JButton Edit_Ballot;
     private javax.swing.JButton Edit_Ballot1;
-    private javax.swing.JButton Edit_Ballot2;
+    private javax.swing.JButton Edit_Item;
+    private javax.swing.JButton Edit_Race;
     private javax.swing.JPanel Eligible3;
-    private javax.swing.JCheckBox Freshman3;
-    private javax.swing.JCheckBox Grad_All3;
-    private javax.swing.JCheckBox Grad_All4;
-    private javax.swing.JCheckBox Grad_All5;
-    private javax.swing.JCheckBox Grad_All6;
-    private javax.swing.JCheckBox Grad_Full3;
-    private javax.swing.JCheckBox Grad_Full4;
-    private javax.swing.JCheckBox Grad_Full5;
-    private javax.swing.JCheckBox Grad_Full6;
-    private javax.swing.JCheckBox Grad_Online3;
-    private javax.swing.JCheckBox Grad_Online4;
-    private javax.swing.JCheckBox Grad_Online5;
-    private javax.swing.JCheckBox Grad_Part3;
-    private javax.swing.JCheckBox Grad_Part4;
-    private javax.swing.JCheckBox Grad_Part5;
-    private javax.swing.JCheckBox Grad_Part6;
-    private javax.swing.JPanel Item_Editor;
+    private javax.swing.JCheckBox Female;
+    private javax.swing.JCheckBox Freshman;
+    private javax.swing.JCheckBox G_All;
+    private javax.swing.JCheckBox Grad_All;
+    private javax.swing.JCheckBox Grad_Full;
+    private javax.swing.JCheckBox Grad_Online;
+    private javax.swing.JCheckBox Grad_Part;
+    private javax.swing.JFrame Item_Editor;
     private javax.swing.JCheckBox Junior3;
+    private javax.swing.JCheckBox M1;
+    private javax.swing.JCheckBox M2;
+    private javax.swing.JCheckBox M3;
+    private javax.swing.JCheckBox M_All;
+    private javax.swing.JCheckBox Male;
     private javax.swing.JTextField Open_Date1;
-    private javax.swing.JPanel Race;
     private javax.swing.JFrame Race_Editor;
-    private javax.swing.JList<String> Races2;
-    private javax.swing.JButton Return;
+    private javax.swing.JList<String> Race_List;
+    private javax.swing.JButton Return_Ballot;
+    private javax.swing.JButton Return_Item;
+    private javax.swing.JButton Return_Race;
     private javax.swing.JButton Save_Item;
-    private javax.swing.JButton Select_Race2;
-    private javax.swing.JButton Select_Race4;
-    private javax.swing.JButton Select_Race5;
+    private javax.swing.JButton Save_Race;
     private javax.swing.JCheckBox Senior3;
     private javax.swing.JCheckBox Sophmore3;
-    private javax.swing.JCheckBox Under_All3;
-    private javax.swing.JCheckBox Under_Full3;
-    private javax.swing.JCheckBox Under_Online3;
-    private javax.swing.JCheckBox Under_Part3;
+    private javax.swing.JCheckBox Under_All;
+    private javax.swing.JCheckBox Under_Full;
+    private javax.swing.JCheckBox Under_Online;
+    private javax.swing.JCheckBox Under_Part;
     private javax.swing.JButton UpdateDate1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
@@ -1382,16 +1371,26 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList1;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 }

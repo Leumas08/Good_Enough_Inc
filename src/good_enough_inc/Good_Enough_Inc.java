@@ -5,6 +5,8 @@
  */
 package good_enough_inc;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author swp99
@@ -17,8 +19,15 @@ public class Good_Enough_Inc {
     public static void main(String[] args) {
         // TODO code application logic here
    //test1
-        new Head().setVisible(true);
-        new Commission_Frame().setVisible(true);
+        JFrame head=new Head();
+        head.setSize(1000, 600);
+        head.setVisible(true);
+        JFrame Com=new Commission_Frame();
+        Com.setSize(1000, 600);
+        Com.setVisible(true);
+        JFrame Stu=new Student();
+        Stu.setSize(1000, 600);
+        Stu.setVisible(true);
     }
     
 }
