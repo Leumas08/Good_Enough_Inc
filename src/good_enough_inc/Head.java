@@ -133,6 +133,7 @@ public class Head extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
+        buttonGroup4 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -641,6 +642,7 @@ public class Head extends javax.swing.JFrame {
         jRadioButton3.setText("Outcome Only");
 
         buttonGroup2.add(jRadioButton4);
+        jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton4.setText("Outcome & Counts");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ALL", "1", "2", "3", "4" }));
@@ -666,7 +668,7 @@ public class Head extends javax.swing.JFrame {
         jRadioButton6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton6.setText("Outcome Only");
 
-        buttonGroup3.add(jRadioButton7);
+        buttonGroup4.add(jRadioButton7);
         jRadioButton7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton7.setText("Outcome & Counts");
 
@@ -675,7 +677,7 @@ public class Head extends javax.swing.JFrame {
         jLabel69.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel69.setText("Number of Top Results to Publish:");
 
-        buttonGroup3.add(jRadioButton8);
+        buttonGroup4.add(jRadioButton8);
         jRadioButton8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton8.setText("Outcome Only");
 
@@ -716,10 +718,7 @@ public class Head extends javax.swing.JFrame {
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addComponent(jRadioButton3)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton4))))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jRadioButton4))
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addGap(7, 7, 7)
                                         .addComponent(jLabel68)
@@ -728,10 +727,7 @@ public class Head extends javax.swing.JFrame {
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addComponent(jRadioButton6)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton5))))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jRadioButton5))
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addGap(7, 7, 7)
                                         .addComponent(jLabel69)
@@ -1193,6 +1189,7 @@ public class Head extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
+    private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.JLabel found;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
