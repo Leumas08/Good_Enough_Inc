@@ -165,8 +165,6 @@ public class Head extends javax.swing.JFrame {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
-        jFrame1.setPreferredSize(new java.awt.Dimension(980, 580));
-
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setText("Email:");
 
@@ -905,7 +903,7 @@ public class Head extends javax.swing.JFrame {
 
         Select.setBackground(new java.awt.Color(153, 255, 153));
         Select.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Select.setText("Select Election");
+        Select.setText("Edit Election");
         Select.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SelectActionPerformed(evt);
