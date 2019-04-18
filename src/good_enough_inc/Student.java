@@ -42,6 +42,7 @@ public class Student extends javax.swing.JFrame {
         jRadioButton6 = new javax.swing.JRadioButton();
         jLabel7 = new javax.swing.JLabel();
         Next_Plurality = new javax.swing.JButton();
+        jLabel76 = new javax.swing.JLabel();
         Choose_Many = new javax.swing.JFrame();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -56,6 +57,7 @@ public class Student extends javax.swing.JFrame {
         jCheckBox4 = new javax.swing.JCheckBox();
         jCheckBox5 = new javax.swing.JCheckBox();
         jCheckBox6 = new javax.swing.JCheckBox();
+        jLabel77 = new javax.swing.JLabel();
         Binary = new javax.swing.JFrame();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -65,6 +67,7 @@ public class Student extends javax.swing.JFrame {
         Next_Binary = new javax.swing.JButton();
         jRadioButton7 = new javax.swing.JRadioButton();
         jRadioButton8 = new javax.swing.JRadioButton();
+        jLabel78 = new javax.swing.JLabel();
         Pref = new javax.swing.JFrame();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -82,43 +85,62 @@ public class Student extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         Begin = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
 
         Plurality.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         Plurality.setPreferredSize(new java.awt.Dimension(980, 590));
         Plurality.setResizable(false);
+        Plurality.getContentPane().setLayout(null);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Election Name");
         jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Plurality.getContentPane().add(jLabel4);
+        jLabel4.setBounds(399, 21, 227, 27);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Race Information");
+        Plurality.getContentPane().add(jLabel5);
+        jLabel5.setBounds(399, 105, 227, 35);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel6.setText("Please Select One of the Options Below:");
+        Plurality.getContentPane().add(jLabel6);
+        jLabel6.setBounds(217, 187, 354, 35);
 
         jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton1.setText("Option 1");
+        Plurality.getContentPane().add(jRadioButton1);
+        jRadioButton1.setBounds(458, 224, 79, 25);
 
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton2.setText("Option 2");
+        Plurality.getContentPane().add(jRadioButton2);
+        jRadioButton2.setBounds(458, 267, 79, 25);
 
         jRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton3.setText("Option 3");
+        Plurality.getContentPane().add(jRadioButton3);
+        jRadioButton3.setBounds(458, 310, 79, 25);
 
         jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton4.setText("Option 4");
+        Plurality.getContentPane().add(jRadioButton4);
+        jRadioButton4.setBounds(458, 353, 79, 25);
 
         jRadioButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton5.setText("Option 5");
+        Plurality.getContentPane().add(jRadioButton5);
+        jRadioButton5.setBounds(458, 396, 79, 25);
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField1.setText("Write-In");
@@ -127,14 +149,20 @@ public class Student extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
+        Plurality.getContentPane().add(jTextField1);
+        jTextField1.setBounds(485, 439, 176, 23);
 
         jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton6ActionPerformed(evt);
             }
         });
+        Plurality.getContentPane().add(jRadioButton6);
+        jRadioButton6.setBounds(458, 441, 25, 21);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
+        Plurality.getContentPane().add(jLabel7);
+        jLabel7.setBounds(0, 0, 179, 80);
 
         Next_Plurality.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Next_Plurality.setText("Next");
@@ -143,88 +171,35 @@ public class Student extends javax.swing.JFrame {
                 Next_PluralityActionPerformed(evt);
             }
         });
+        Plurality.getContentPane().add(Next_Plurality);
+        Next_Plurality.setBounds(833, 528, 137, 51);
 
-        javax.swing.GroupLayout PluralityLayout = new javax.swing.GroupLayout(Plurality.getContentPane());
-        Plurality.getContentPane().setLayout(PluralityLayout);
-        PluralityLayout.setHorizontalGroup(
-            PluralityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PluralityLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(PluralityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton3)
-                    .addComponent(jRadioButton4)
-                    .addGroup(PluralityLayout.createSequentialGroup()
-                        .addComponent(jRadioButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jRadioButton5))
-                .addGap(319, 319, 319))
-            .addGroup(PluralityLayout.createSequentialGroup()
-                .addGroup(PluralityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PluralityLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Next_Plurality, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(PluralityLayout.createSequentialGroup()
-                        .addGroup(PluralityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PluralityLayout.createSequentialGroup()
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(220, 220, 220)
-                                .addGroup(PluralityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addGroup(PluralityLayout.createSequentialGroup()
-                                .addGap(217, 217, 217)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 344, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        PluralityLayout.setVerticalGroup(
-            PluralityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PluralityLayout.createSequentialGroup()
-                .addGroup(PluralityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PluralityLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel7))
-                .addGap(25, 25, 25)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jRadioButton2)
-                .addGap(18, 18, 18)
-                .addComponent(jRadioButton3)
-                .addGap(18, 18, 18)
-                .addComponent(jRadioButton4)
-                .addGap(18, 18, 18)
-                .addComponent(jRadioButton5)
-                .addGap(18, 18, 18)
-                .addGroup(PluralityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jRadioButton6)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
-                .addComponent(Next_Plurality, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        jLabel76.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        Plurality.getContentPane().add(jLabel76);
+        jLabel76.setBounds(0, 0, 960, 580);
 
         Choose_Many.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         Choose_Many.setResizable(false);
+        Choose_Many.getContentPane().setLayout(null);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Election Name");
         jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Choose_Many.getContentPane().add(jLabel8);
+        jLabel8.setBounds(399, 21, 227, 27);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Race Information");
+        Choose_Many.getContentPane().add(jLabel9);
+        jLabel9.setBounds(399, 105, 227, 35);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel10.setText("Please Select As Many of the Options Below:");
+        Choose_Many.getContentPane().add(jLabel10);
+        jLabel10.setBounds(217, 187, 354, 35);
 
         jTextField2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jTextField2.setText("Write-In");
@@ -233,8 +208,12 @@ public class Student extends javax.swing.JFrame {
                 jTextField2ActionPerformed(evt);
             }
         });
+        Choose_Many.getContentPane().add(jTextField2);
+        jTextField2.setBounds(482, 446, 176, 28);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
+        Choose_Many.getContentPane().add(jLabel11);
+        jLabel11.setBounds(0, 0, 179, 80);
 
         Return_Many.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Return_Many.setText("Previous");
@@ -243,6 +222,8 @@ public class Student extends javax.swing.JFrame {
                 Return_ManyActionPerformed(evt);
             }
         });
+        Choose_Many.getContentPane().add(Return_Many);
+        Return_Many.setBounds(10, 518, 137, 50);
 
         Next_Many.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Next_Many.setText("Next");
@@ -251,6 +232,8 @@ public class Student extends javax.swing.JFrame {
                 Next_ManyActionPerformed(evt);
             }
         });
+        Choose_Many.getContentPane().add(Next_Many);
+        Next_Many.setBounds(830, 518, 137, 50);
 
         jCheckBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jCheckBox1.setText("Option 1");
@@ -259,15 +242,23 @@ public class Student extends javax.swing.JFrame {
                 jCheckBox1ActionPerformed(evt);
             }
         });
+        Choose_Many.getContentPane().add(jCheckBox1);
+        jCheckBox1.setBounds(459, 229, 79, 25);
 
         jCheckBox2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jCheckBox2.setText("Option 2");
+        Choose_Many.getContentPane().add(jCheckBox2);
+        jCheckBox2.setBounds(459, 272, 79, 25);
 
         jCheckBox3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jCheckBox3.setText("Option 3");
+        Choose_Many.getContentPane().add(jCheckBox3);
+        jCheckBox3.setBounds(459, 315, 79, 25);
 
         jCheckBox4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jCheckBox4.setText("Option 4");
+        Choose_Many.getContentPane().add(jCheckBox4);
+        jCheckBox4.setBounds(459, 358, 79, 25);
 
         jCheckBox5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jCheckBox5.setText("Option 5");
@@ -276,93 +267,41 @@ public class Student extends javax.swing.JFrame {
                 jCheckBox5ActionPerformed(evt);
             }
         });
+        Choose_Many.getContentPane().add(jCheckBox5);
+        jCheckBox5.setBounds(459, 401, 79, 25);
+        Choose_Many.getContentPane().add(jCheckBox6);
+        jCheckBox6.setBounds(459, 453, 21, 21);
 
-        javax.swing.GroupLayout Choose_ManyLayout = new javax.swing.GroupLayout(Choose_Many.getContentPane());
-        Choose_Many.getContentPane().setLayout(Choose_ManyLayout);
-        Choose_ManyLayout.setHorizontalGroup(
-            Choose_ManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Choose_ManyLayout.createSequentialGroup()
-                .addGroup(Choose_ManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Choose_ManyLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Return_Many, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Choose_ManyLayout.createSequentialGroup()
-                        .addGap(217, 217, 217)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 259, Short.MAX_VALUE)
-                .addComponent(Next_Many, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Choose_ManyLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(Choose_ManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox5)
-                    .addComponent(jCheckBox4)
-                    .addComponent(jCheckBox3)
-                    .addComponent(jCheckBox2)
-                    .addComponent(jCheckBox1)
-                    .addGroup(Choose_ManyLayout.createSequentialGroup()
-                        .addComponent(jCheckBox6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(319, 319, 319))
-            .addGroup(Choose_ManyLayout.createSequentialGroup()
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(220, 220, 220)
-                .addGroup(Choose_ManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        Choose_ManyLayout.setVerticalGroup(
-            Choose_ManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Choose_ManyLayout.createSequentialGroup()
-                .addGroup(Choose_ManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(Choose_ManyLayout.createSequentialGroup()
-                        .addGroup(Choose_ManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(Choose_ManyLayout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel11))
-                        .addGap(25, 25, 25)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jCheckBox1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jCheckBox2)
-                        .addGap(18, 18, 18)
-                        .addComponent(jCheckBox3)
-                        .addGap(18, 18, 18)
-                        .addComponent(jCheckBox4)
-                        .addGap(18, 18, 18)
-                        .addComponent(jCheckBox5)
-                        .addGap(20, 20, 20)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jCheckBox6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                .addGroup(Choose_ManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Next_Many, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-                    .addComponent(Return_Many, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
+        jLabel77.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        Choose_Many.getContentPane().add(jLabel77);
+        jLabel77.setBounds(0, 0, 960, 580);
 
         Binary.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         Binary.setResizable(false);
+        Binary.getContentPane().setLayout(null);
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Election Name");
         jLabel12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Binary.getContentPane().add(jLabel12);
+        jLabel12.setBounds(399, 21, 227, 27);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("Race Information");
+        Binary.getContentPane().add(jLabel13);
+        jLabel13.setBounds(399, 105, 227, 35);
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel14.setText("Please Select One of the Options Below:");
+        Binary.getContentPane().add(jLabel14);
+        jLabel14.setBounds(217, 188, 626, 34);
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
+        Binary.getContentPane().add(jLabel15);
+        jLabel15.setBounds(0, 0, 179, 80);
 
         Return_Binary.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Return_Binary.setText("Previous");
@@ -371,6 +310,8 @@ public class Student extends javax.swing.JFrame {
                 Return_BinaryActionPerformed(evt);
             }
         });
+        Binary.getContentPane().add(Return_Binary);
+        Return_Binary.setBounds(10, 525, 137, 51);
 
         Next_Binary.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Next_Binary.setText("Next");
@@ -379,6 +320,8 @@ public class Student extends javax.swing.JFrame {
                 Next_BinaryActionPerformed(evt);
             }
         });
+        Binary.getContentPane().add(Next_Binary);
+        Next_Binary.setBounds(816, 524, 137, 52);
 
         jRadioButton7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton7.setText("Yes");
@@ -387,6 +330,8 @@ public class Student extends javax.swing.JFrame {
                 jRadioButton7ActionPerformed(evt);
             }
         });
+        Binary.getContentPane().add(jRadioButton7);
+        jRadioButton7.setBounds(442, 246, 53, 31);
 
         jRadioButton8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton8.setText("No");
@@ -395,75 +340,39 @@ public class Student extends javax.swing.JFrame {
                 jRadioButton8ActionPerformed(evt);
             }
         });
+        Binary.getContentPane().add(jRadioButton8);
+        jRadioButton8.setBounds(546, 240, 47, 43);
 
-        javax.swing.GroupLayout BinaryLayout = new javax.swing.GroupLayout(Binary.getContentPane());
-        Binary.getContentPane().setLayout(BinaryLayout);
-        BinaryLayout.setHorizontalGroup(
-            BinaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BinaryLayout.createSequentialGroup()
-                .addGroup(BinaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(BinaryLayout.createSequentialGroup()
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(220, 220, 220)
-                        .addGroup(BinaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(BinaryLayout.createSequentialGroup()
-                        .addGap(217, 217, 217)
-                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(136, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BinaryLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jRadioButton7)
-                .addGap(51, 51, 51)
-                .addComponent(jRadioButton8)
-                .addGap(386, 386, 386))
-            .addGroup(BinaryLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Return_Binary, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Next_Binary, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26))
-        );
-        BinaryLayout.setVerticalGroup(
-            BinaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BinaryLayout.createSequentialGroup()
-                .addGroup(BinaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(BinaryLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel15))
-                .addGap(25, 25, 25)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
-                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(BinaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 241, Short.MAX_VALUE)
-                .addGroup(BinaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Return_Binary, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Next_Binary, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
+        jLabel78.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        Binary.getContentPane().add(jLabel78);
+        jLabel78.setBounds(0, 0, 960, 580);
 
         Pref.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         Pref.setResizable(false);
+        Pref.getContentPane().setLayout(null);
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("Election Name");
         jLabel16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Pref.getContentPane().add(jLabel16);
+        jLabel16.setBounds(399, 21, 227, 27);
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setText("Race Information");
+        Pref.getContentPane().add(jLabel17);
+        jLabel17.setBounds(399, 105, 227, 35);
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel18.setText("Please label order of preferance, where lower numbers means most preffered:");
+        Pref.getContentPane().add(jLabel18);
+        jLabel18.setBounds(166, 187, 626, 35);
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
+        Pref.getContentPane().add(jLabel19);
+        jLabel19.setBounds(0, 0, 179, 80);
 
         Return_Pref.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Return_Pref.setText("Previous");
@@ -472,6 +381,8 @@ public class Student extends javax.swing.JFrame {
                 Return_PrefActionPerformed(evt);
             }
         });
+        Pref.getContentPane().add(Return_Pref);
+        Return_Pref.setBounds(10, 519, 137, 50);
 
         Submit.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Submit.setText("Submit Ballot");
@@ -480,6 +391,8 @@ public class Student extends javax.swing.JFrame {
                 SubmitActionPerformed(evt);
             }
         });
+        Pref.getContentPane().add(Submit);
+        Submit.setBounds(865, 519, 137, 50);
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
@@ -488,112 +401,61 @@ public class Student extends javax.swing.JFrame {
                 jComboBox1ActionPerformed(evt);
             }
         });
+        Pref.getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(422, 240, 185, 28);
 
         jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
+        Pref.getContentPane().add(jComboBox2);
+        jComboBox2.setBounds(422, 286, 185, 28);
 
         jComboBox3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
+        Pref.getContentPane().add(jComboBox3);
+        jComboBox3.setBounds(422, 332, 185, 28);
 
         jComboBox4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
+        Pref.getContentPane().add(jComboBox4);
+        jComboBox4.setBounds(422, 378, 185, 28);
 
         jComboBox5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
+        Pref.getContentPane().add(jComboBox5);
+        jComboBox5.setBounds(422, 424, 185, 28);
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel20.setText("1.");
+        Pref.getContentPane().add(jLabel20);
+        jLabel20.setBounds(389, 243, 15, 22);
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel21.setText("2.");
+        Pref.getContentPane().add(jLabel21);
+        jLabel21.setBounds(389, 289, 15, 22);
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel22.setText("3.");
+        Pref.getContentPane().add(jLabel22);
+        jLabel22.setBounds(389, 335, 15, 22);
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel23.setText("4.");
+        Pref.getContentPane().add(jLabel23);
+        jLabel23.setBounds(389, 381, 15, 22);
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel24.setText("5.");
+        Pref.getContentPane().add(jLabel24);
+        jLabel24.setBounds(389, 427, 15, 22);
 
-        javax.swing.GroupLayout PrefLayout = new javax.swing.GroupLayout(Pref.getContentPane());
-        Pref.getContentPane().setLayout(PrefLayout);
-        PrefLayout.setHorizontalGroup(
-            PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PrefLayout.createSequentialGroup()
-                .addGap(166, 166, 166)
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(220, Short.MAX_VALUE))
-            .addGroup(PrefLayout.createSequentialGroup()
-                .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PrefLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Return_Pref, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(PrefLayout.createSequentialGroup()
-                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(220, 220, 220)
-                        .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(PrefLayout.createSequentialGroup()
-                        .addGap(389, 389, 389)
-                        .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(18, 18, 18)
-                        .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jComboBox4, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox5, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Submit, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        PrefLayout.setVerticalGroup(
-            PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PrefLayout.createSequentialGroup()
-                .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PrefLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel19))
-                .addGap(25, 25, 25)
-                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel20))
-                .addGap(18, 18, 18)
-                .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel21))
-                .addGap(18, 18, 18)
-                .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel22))
-                .addGap(18, 18, 18)
-                .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel23))
-                .addGap(18, 18, 18)
-                .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel24))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-                .addGroup(PrefLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Submit, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-                    .addComponent(Return_Pref, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
+        jLabel79.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        Pref.getContentPane().add(jLabel79);
+        jLabel79.setBounds(0, 0, 960, 580);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jList1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
@@ -603,12 +465,19 @@ public class Student extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jList1);
 
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(404, 192, 182, 251);
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Available Ballots");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(404, 157, 182, 29);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel2.setText("Student Home Page");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(10, 11, 211, 29);
 
         Begin.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Begin.setText("Begin Voting");
@@ -617,46 +486,18 @@ public class Student extends javax.swing.JFrame {
                 BeginActionPerformed(evt);
             }
         });
+        getContentPane().add(Begin);
+        Begin.setBounds(404, 449, 182, 37);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel3.setText("Please click on a ballot in the list and press 'Begin Voting' to open the ballot to vote.");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(42, 95, 893, 29);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(Begin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE))
-                .addGap(394, 394, 394))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel3)))
-                .addContainerGap(45, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(33, 33, 33)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Begin)
-                .addGap(94, 94, 94))
-        );
+        jLabel75.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        getContentPane().add(jLabel75);
+        jLabel75.setBounds(0, 0, 960, 580);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -832,6 +673,11 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList1;
