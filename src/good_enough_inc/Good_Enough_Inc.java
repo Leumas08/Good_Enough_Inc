@@ -19,15 +19,8 @@ public class Good_Enough_Inc {
     public static void main(String[] args) {
         // TODO code application logic here
    //test1
-        JFrame head=new Head();
-        head.setSize(1000, 600);
-        head.setVisible(true);
-        JFrame Com=new Commission_Frame();
-        Com.setSize(1000, 600);
-        Com.setVisible(true);
-        JFrame Stu=new Student();
-        Stu.setSize(1000, 600);
-        Stu.setVisible(true);
+        new Comish_Landing_Page().setVisible(true);
+        new Student_Landing_Page().setVisible(true);
+        new HSO_Landing_Page().setVisible(true);
     }
-    
 }
