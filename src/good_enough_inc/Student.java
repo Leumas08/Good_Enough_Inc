@@ -29,6 +29,7 @@ public class Student extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Single = new javax.swing.ButtonGroup();
         Plurality = new javax.swing.JFrame();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -86,6 +87,7 @@ public class Student extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel79 = new javax.swing.JLabel();
+        Yes_No = new javax.swing.ButtonGroup();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         jLabel1 = new javax.swing.JLabel();
@@ -117,26 +119,31 @@ public class Student extends javax.swing.JFrame {
         Plurality.getContentPane().add(jLabel6);
         jLabel6.setBounds(217, 187, 354, 35);
 
+        Single.add(jRadioButton1);
         jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton1.setText("Option 1");
         Plurality.getContentPane().add(jRadioButton1);
         jRadioButton1.setBounds(458, 224, 79, 25);
 
+        Single.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton2.setText("Option 2");
         Plurality.getContentPane().add(jRadioButton2);
         jRadioButton2.setBounds(458, 267, 79, 25);
 
+        Single.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton3.setText("Option 3");
         Plurality.getContentPane().add(jRadioButton3);
         jRadioButton3.setBounds(458, 310, 79, 25);
 
+        Single.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton4.setText("Option 4");
         Plurality.getContentPane().add(jRadioButton4);
         jRadioButton4.setBounds(458, 353, 79, 25);
 
+        Single.add(jRadioButton5);
         jRadioButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton5.setText("Option 5");
         Plurality.getContentPane().add(jRadioButton5);
@@ -152,6 +159,7 @@ public class Student extends javax.swing.JFrame {
         Plurality.getContentPane().add(jTextField1);
         jTextField1.setBounds(485, 439, 176, 23);
 
+        Single.add(jRadioButton6);
         jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton6ActionPerformed(evt);
@@ -323,6 +331,7 @@ public class Student extends javax.swing.JFrame {
         Binary.getContentPane().add(Next_Binary);
         Next_Binary.setBounds(816, 524, 137, 52);
 
+        Yes_No.add(jRadioButton7);
         jRadioButton7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton7.setText("Yes");
         jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -333,6 +342,7 @@ public class Student extends javax.swing.JFrame {
         Binary.getContentPane().add(jRadioButton7);
         jRadioButton7.setBounds(442, 246, 53, 31);
 
+        Yes_No.add(jRadioButton8);
         jRadioButton8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton8.setText("No");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -639,7 +649,9 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JButton Return_Binary;
     private javax.swing.JButton Return_Many;
     private javax.swing.JButton Return_Pref;
+    private javax.swing.ButtonGroup Single;
     private javax.swing.JButton Submit;
+    private javax.swing.ButtonGroup Yes_No;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
