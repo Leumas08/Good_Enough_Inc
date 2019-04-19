@@ -53,7 +53,7 @@ public class HSO_Landing_Page extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Enter_HSO);
-        Enter_HSO.setBounds(312, 208, 357, 90);
+        Enter_HSO.setBounds(250, 210, 460, 90);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
         getContentPane().add(jLabel5);
