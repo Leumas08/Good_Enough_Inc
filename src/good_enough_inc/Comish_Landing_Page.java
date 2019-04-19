@@ -60,7 +60,7 @@ public class Comish_Landing_Page extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Enter_Student);
-        Enter_Student.setBounds(356, 197, 269, 91);
+        Enter_Student.setBounds(350, 200, 290, 91);
 
         Enter_Com.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Enter_Com.setText("Election Commissioner");
@@ -70,7 +70,7 @@ public class Comish_Landing_Page extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Enter_Com);
-        Enter_Com.setBounds(356, 306, 269, 91);
+        Enter_Com.setBounds(350, 310, 290, 91);
 
         jLabel75.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N

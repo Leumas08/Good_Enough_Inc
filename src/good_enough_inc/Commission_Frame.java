@@ -139,7 +139,6 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        Edit_Ballot1 = new javax.swing.JButton();
         Dates1 = new javax.swing.JPanel();
         UpdateDate1 = new javax.swing.JButton();
         Close_Date1 = new javax.swing.JTextField();
@@ -194,7 +193,7 @@ public class Commission_Frame extends javax.swing.JFrame {
 
         jList1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "Item 1" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -271,14 +270,14 @@ public class Commission_Frame extends javax.swing.JFrame {
             }
         });
         Race_Editor.getContentPane().add(jRadioButton1);
-        jRadioButton1.setBounds(165, 312, 87, 31);
+        jRadioButton1.setBounds(165, 312, 89, 31);
 
         jRadioButton2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton2.setText("Not Allowed");
         Race_Editor.getContentPane().add(jRadioButton2);
-        jRadioButton2.setBounds(319, 312, 121, 31);
+        jRadioButton2.setBounds(319, 312, 123, 31);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText(" write-ins for this race.  To add an item, press 'Add Item'.  To edit or delete an item, click");
@@ -306,7 +305,7 @@ public class Commission_Frame extends javax.swing.JFrame {
 
         Race_List.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Race_List.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Race 1", "Race 2", "Race 3" };
+            String[] strings = { "Race 1", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -689,7 +688,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jScrollPane2.setViewportView(Eligible3);
 
         Ballot_Editor.getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(186, 167, 242, 335);
+        jScrollPane2.setBounds(186, 167, 250, 335);
 
         jLabel49.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -775,7 +774,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel54.setBounds(253, 183, 128, 29);
 
         Can_Name.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Can_Name.setText("Name of Canidate");
+        Can_Name.setText("Name of Candidate");
         Can_Name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Can_NameActionPerformed(evt);
@@ -790,7 +789,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel56.setBounds(260, 260, 121, 29);
 
         Can_Party.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Can_Party.setText("Party of Canidate");
+        Can_Party.setText("Party of Candidate");
         Can_Party.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Can_PartyActionPerformed(evt);
@@ -800,7 +799,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         Can_Party.setBounds(399, 257, 326, 35);
 
         Can_ID.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Can_ID.setText("ID# of Canidate");
+        Can_ID.setText("ID# of Candidate");
         Item_Editor.getContentPane().add(Can_ID);
         Can_ID.setBounds(399, 334, 326, 40);
 
@@ -867,11 +866,11 @@ public class Commission_Frame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Edit_Ballot);
-        Edit_Ballot.setBounds(71, 299, 180, 53);
+        Edit_Ballot.setBounds(70, 330, 180, 53);
 
         Ballots.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Ballots.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "Ballot 1" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -909,16 +908,6 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel11.setText("ballot from the list and press \"Edit Ballot\".  To create a");
         getContentPane().add(jLabel11);
         jLabel11.setBounds(643, 103, 327, 17);
-
-        Edit_Ballot1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Edit_Ballot1.setText("Remove Ballot");
-        Edit_Ballot1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Edit_Ballot1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Edit_Ballot1);
-        Edit_Ballot1.setBounds(71, 372, 180, 53);
 
         Dates1.setBackground(new java.awt.Color(255, 255, 255));
         Dates1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -983,7 +972,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         );
 
         getContentPane().add(Dates1);
-        Dates1.setBounds(485, 219, 276, 145);
+        Dates1.setBounds(485, 219, 276, 150);
 
         Add_Ballot.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Add_Ballot.setText("Add Ballot");
@@ -993,7 +982,7 @@ public class Commission_Frame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Add_Ballot);
-        Add_Ballot.setBounds(71, 219, 180, 53);
+        Add_Ballot.setBounds(70, 250, 180, 53);
 
         jLabel36.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1008,10 +997,6 @@ public class Commission_Frame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void Edit_Ballot1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edit_Ballot1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Edit_Ballot1ActionPerformed
 
     private void Close_Date1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Close_Date1ActionPerformed
         // TODO add your handling code here:
@@ -1304,7 +1289,6 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JButton Delete_Item;
     private javax.swing.JButton Delete_Race;
     private javax.swing.JButton Edit_Ballot;
-    private javax.swing.JButton Edit_Ballot1;
     private javax.swing.JButton Edit_Item;
     private javax.swing.JButton Edit_Race;
     private javax.swing.JPanel Eligible3;
