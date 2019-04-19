@@ -131,6 +131,8 @@ public class Head extends javax.swing.JFrame {
         jLabel69 = new javax.swing.JLabel();
         jRadioButton8 = new javax.swing.JRadioButton();
         jLabel72 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
@@ -185,7 +187,7 @@ public class Head extends javax.swing.JFrame {
             }
         });
         Election_Editor.getContentPane().add(Search);
-        Search.setBounds(661, 267, 139, 25);
+        Search.setBounds(660, 267, 140, 25);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel9.setText("Name:");
@@ -212,14 +214,14 @@ public class Head extends javax.swing.JFrame {
         found.setBounds(661, 298, 139, 22);
 
         Disqualify.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Disqualify.setText("Disqualify");
+        Disqualify.setText("Disqualify & Recount");
         Disqualify.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DisqualifyActionPerformed(evt);
             }
         });
         Election_Editor.getContentPane().add(Disqualify);
-        Disqualify.setBounds(661, 326, 109, 25);
+        Disqualify.setBounds(630, 330, 170, 30);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel13.setText("To change the current Commissioner, type in the new information and press 'Update Commissioner'.");
@@ -332,7 +334,7 @@ public class Head extends javax.swing.JFrame {
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("Results");
         Results_Page.getContentPane().add(jLabel16);
-        jLabel16.setBounds(70, 85, 375, 29);
+        jLabel16.setBounds(70, 110, 375, 29);
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel14.setText("Election");
@@ -343,17 +345,17 @@ public class Head extends javax.swing.JFrame {
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setText("Demographics");
         Results_Page.getContentPane().add(jLabel18);
-        jLabel18.setBounds(547, 85, 375, 29);
+        jLabel18.setBounds(550, 110, 375, 29);
 
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setText("Certify");
+        jButton4.setText("Recount");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
         Results_Page.getContentPane().add(jButton4);
-        jButton4.setBounds(840, 520, 130, 51);
+        jButton4.setBounds(560, 520, 130, 51);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -540,7 +542,7 @@ public class Head extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jPanel1);
 
         Results_Page.getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(547, 132, 375, 352);
+        jScrollPane2.setBounds(550, 150, 375, 352);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -810,12 +812,32 @@ public class Head extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jPanel3);
 
         Results_Page.getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(70, 132, 375, 352);
+        jScrollPane3.setBounds(70, 150, 375, 352);
 
         jLabel72.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         Results_Page.getContentPane().add(jLabel72);
         jLabel72.setBounds(0, 0, 960, 580);
+
+        jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton5.setText("Certify");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        Results_Page.getContentPane().add(jButton5);
+        jButton5.setBounds(840, 520, 130, 51);
+
+        jButton6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton6.setText("Publish");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        Results_Page.getContentPane().add(jButton6);
+        jButton6.setBounds(700, 520, 130, 51);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -1004,12 +1026,6 @@ public class Head extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ComNameActionPerformed
 
-    private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
-        // TODO add your handling code here:
-        if(ID.getText().equals("1234")) found.setText("Found");
-        else found.setText("Not Found");
-    }//GEN-LAST:event_SearchActionPerformed
-
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
 
@@ -1028,6 +1044,20 @@ public class Head extends javax.swing.JFrame {
     private void E_NameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_E_NameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_E_NameActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
+        // TODO add your handling code here:
+        if(ID.getText().equals("1234")) found.setText("Found");
+        else found.setText("Not Found");
+    }//GEN-LAST:event_SearchActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1089,6 +1119,8 @@ public class Head extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
