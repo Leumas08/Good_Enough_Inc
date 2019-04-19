@@ -84,12 +84,12 @@ public class Student extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jLabel80 = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
-        jLabel82 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
+        jLabel82 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         jLabel1 = new javax.swing.JLabel();
@@ -399,7 +399,6 @@ public class Student extends javax.swing.JFrame {
         jPanel1.add(jRadioButton19);
         jRadioButton19.setBounds(430, 290, 113, 31);
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setText("Clear Choice");
         jPanel1.add(jButton2);
@@ -407,7 +406,6 @@ public class Student extends javax.swing.JFrame {
         jPanel1.add(jSeparator5);
         jSeparator5.setBounds(0, 970, 980, 20);
 
-        jButton4.setBackground(new java.awt.Color(255, 255, 255));
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton4.setText("Clear Choice");
         jPanel1.add(jButton4);
@@ -423,17 +421,11 @@ public class Student extends javax.swing.JFrame {
         jPanel1.add(jLabel81);
         jLabel81.setBounds(0, 0, 960, 580);
 
-        jLabel82.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
-        jPanel1.add(jLabel82);
-        jLabel82.setBounds(10, 530, 960, 660);
-
         jLabel83.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         jPanel1.add(jLabel83);
         jLabel83.setBounds(10, 1130, 960, 660);
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton3.setText("Clear Choice");
         jPanel1.add(jButton3);
@@ -453,6 +445,9 @@ public class Student extends javax.swing.JFrame {
         );
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
+
+        jLabel82.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
