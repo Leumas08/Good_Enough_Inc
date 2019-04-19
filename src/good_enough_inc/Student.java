@@ -30,62 +30,6 @@ public class Student extends javax.swing.JFrame {
     private void initComponents() {
 
         Single = new javax.swing.ButtonGroup();
-        Plurality = new javax.swing.JFrame();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jTextField1 = new javax.swing.JTextField();
-        jRadioButton6 = new javax.swing.JRadioButton();
-        Next_Plurality = new javax.swing.JButton();
-        jLabel90 = new javax.swing.JLabel();
-        Choose_Many = new javax.swing.JFrame();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        Return_Many = new javax.swing.JButton();
-        Next_Many = new javax.swing.JButton();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
-        jCheckBox5 = new javax.swing.JCheckBox();
-        jCheckBox6 = new javax.swing.JCheckBox();
-        jLabel77 = new javax.swing.JLabel();
-        Binary = new javax.swing.JFrame();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        Return_Binary = new javax.swing.JButton();
-        Next_Binary = new javax.swing.JButton();
-        jRadioButton7 = new javax.swing.JRadioButton();
-        jRadioButton8 = new javax.swing.JRadioButton();
-        jLabel78 = new javax.swing.JLabel();
-        Pref = new javax.swing.JFrame();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        Return_Pref = new javax.swing.JButton();
-        Submit = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jComboBox5 = new javax.swing.JComboBox<>();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel79 = new javax.swing.JLabel();
         Yes_No = new javax.swing.ButtonGroup();
         Combined = new javax.swing.JFrame();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -142,6 +86,7 @@ public class Student extends javax.swing.JFrame {
         jLabel81 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
@@ -157,370 +102,6 @@ public class Student extends javax.swing.JFrame {
         jLabel41 = new javax.swing.JLabel();
         jLabel84 = new javax.swing.JLabel();
 
-        Plurality.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        Plurality.setPreferredSize(new java.awt.Dimension(980, 590));
-        Plurality.setResizable(false);
-        Plurality.getContentPane().setLayout(null);
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Election Name");
-        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Plurality.getContentPane().add(jLabel4);
-        jLabel4.setBounds(399, 21, 227, 27);
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Race Information");
-        Plurality.getContentPane().add(jLabel5);
-        jLabel5.setBounds(399, 105, 227, 35);
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel6.setText("Please Select One of the Options Below:");
-        Plurality.getContentPane().add(jLabel6);
-        jLabel6.setBounds(217, 187, 354, 35);
-
-        Single.add(jRadioButton1);
-        jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jRadioButton1.setText("Option 1");
-        Plurality.getContentPane().add(jRadioButton1);
-        jRadioButton1.setBounds(458, 224, 79, 25);
-
-        Single.add(jRadioButton2);
-        jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jRadioButton2.setText("Option 2");
-        Plurality.getContentPane().add(jRadioButton2);
-        jRadioButton2.setBounds(458, 267, 79, 25);
-
-        Single.add(jRadioButton3);
-        jRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jRadioButton3.setText("Option 3");
-        Plurality.getContentPane().add(jRadioButton3);
-        jRadioButton3.setBounds(458, 310, 79, 25);
-
-        Single.add(jRadioButton4);
-        jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jRadioButton4.setText("Option 4");
-        Plurality.getContentPane().add(jRadioButton4);
-        jRadioButton4.setBounds(458, 353, 79, 25);
-
-        Single.add(jRadioButton5);
-        jRadioButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jRadioButton5.setText("Option 5");
-        Plurality.getContentPane().add(jRadioButton5);
-        jRadioButton5.setBounds(458, 396, 79, 25);
-
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField1.setText("Write-In");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        Plurality.getContentPane().add(jTextField1);
-        jTextField1.setBounds(485, 439, 176, 23);
-
-        Single.add(jRadioButton6);
-        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton6ActionPerformed(evt);
-            }
-        });
-        Plurality.getContentPane().add(jRadioButton6);
-        jRadioButton6.setBounds(458, 441, 25, 21);
-
-        Next_Plurality.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Next_Plurality.setText("Next");
-        Next_Plurality.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Next_PluralityActionPerformed(evt);
-            }
-        });
-        Plurality.getContentPane().add(Next_Plurality);
-        Next_Plurality.setBounds(833, 528, 137, 51);
-
-        jLabel90.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
-        Plurality.getContentPane().add(jLabel90);
-        jLabel90.setBounds(20, -20, 960, 650);
-
-        Choose_Many.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        Choose_Many.setResizable(false);
-        Choose_Many.getContentPane().setLayout(null);
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Election Name");
-        jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Choose_Many.getContentPane().add(jLabel8);
-        jLabel8.setBounds(399, 21, 227, 27);
-
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Race Information");
-        Choose_Many.getContentPane().add(jLabel9);
-        jLabel9.setBounds(399, 105, 227, 35);
-
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel10.setText("Please Select As Many of the Options Below:");
-        Choose_Many.getContentPane().add(jLabel10);
-        jLabel10.setBounds(217, 187, 354, 35);
-
-        jTextField2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField2.setText("Write-In");
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        Choose_Many.getContentPane().add(jTextField2);
-        jTextField2.setBounds(482, 446, 176, 28);
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
-        Choose_Many.getContentPane().add(jLabel11);
-        jLabel11.setBounds(0, 0, 179, 80);
-
-        Return_Many.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Return_Many.setText("Previous");
-        Return_Many.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Return_ManyActionPerformed(evt);
-            }
-        });
-        Choose_Many.getContentPane().add(Return_Many);
-        Return_Many.setBounds(10, 518, 137, 50);
-
-        Next_Many.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Next_Many.setText("Next");
-        Next_Many.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Next_ManyActionPerformed(evt);
-            }
-        });
-        Choose_Many.getContentPane().add(Next_Many);
-        Next_Many.setBounds(830, 518, 137, 50);
-
-        jCheckBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jCheckBox1.setText("Option 1");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
-            }
-        });
-        Choose_Many.getContentPane().add(jCheckBox1);
-        jCheckBox1.setBounds(459, 229, 79, 25);
-
-        jCheckBox2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jCheckBox2.setText("Option 2");
-        Choose_Many.getContentPane().add(jCheckBox2);
-        jCheckBox2.setBounds(459, 272, 79, 25);
-
-        jCheckBox3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jCheckBox3.setText("Option 3");
-        Choose_Many.getContentPane().add(jCheckBox3);
-        jCheckBox3.setBounds(459, 315, 79, 25);
-
-        jCheckBox4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jCheckBox4.setText("Option 4");
-        Choose_Many.getContentPane().add(jCheckBox4);
-        jCheckBox4.setBounds(459, 358, 79, 25);
-
-        jCheckBox5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jCheckBox5.setText("Option 5");
-        jCheckBox5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox5ActionPerformed(evt);
-            }
-        });
-        Choose_Many.getContentPane().add(jCheckBox5);
-        jCheckBox5.setBounds(459, 401, 79, 25);
-        Choose_Many.getContentPane().add(jCheckBox6);
-        jCheckBox6.setBounds(459, 453, 21, 21);
-
-        jLabel77.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
-        Choose_Many.getContentPane().add(jLabel77);
-        jLabel77.setBounds(0, 0, 960, 580);
-
-        Binary.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        Binary.setResizable(false);
-        Binary.getContentPane().setLayout(null);
-
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("Election Name");
-        jLabel12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Binary.getContentPane().add(jLabel12);
-        jLabel12.setBounds(399, 21, 227, 27);
-
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("Race Information");
-        Binary.getContentPane().add(jLabel13);
-        jLabel13.setBounds(399, 105, 227, 35);
-
-        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel14.setText("Please Select One of the Options Below:");
-        Binary.getContentPane().add(jLabel14);
-        jLabel14.setBounds(217, 188, 626, 34);
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
-        Binary.getContentPane().add(jLabel15);
-        jLabel15.setBounds(0, 0, 179, 80);
-
-        Return_Binary.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Return_Binary.setText("Previous");
-        Return_Binary.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Return_BinaryActionPerformed(evt);
-            }
-        });
-        Binary.getContentPane().add(Return_Binary);
-        Return_Binary.setBounds(10, 525, 137, 51);
-
-        Next_Binary.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Next_Binary.setText("Next");
-        Next_Binary.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Next_BinaryActionPerformed(evt);
-            }
-        });
-        Binary.getContentPane().add(Next_Binary);
-        Next_Binary.setBounds(816, 524, 137, 52);
-
-        Yes_No.add(jRadioButton7);
-        jRadioButton7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton7.setText("Yes");
-        jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton7ActionPerformed(evt);
-            }
-        });
-        Binary.getContentPane().add(jRadioButton7);
-        jRadioButton7.setBounds(442, 246, 53, 31);
-
-        Yes_No.add(jRadioButton8);
-        jRadioButton8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton8.setText("No");
-        jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton8ActionPerformed(evt);
-            }
-        });
-        Binary.getContentPane().add(jRadioButton8);
-        jRadioButton8.setBounds(546, 240, 47, 43);
-
-        jLabel78.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
-        Binary.getContentPane().add(jLabel78);
-        jLabel78.setBounds(0, 0, 960, 580);
-
-        Pref.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        Pref.setResizable(false);
-        Pref.getContentPane().setLayout(null);
-
-        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel16.setText("Election Name");
-        jLabel16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Pref.getContentPane().add(jLabel16);
-        jLabel16.setBounds(399, 21, 227, 27);
-
-        jLabel17.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel17.setText("Race Information");
-        Pref.getContentPane().add(jLabel17);
-        jLabel17.setBounds(399, 105, 227, 35);
-
-        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel18.setText("Please label order of preferance, where lower numbers means most preffered:");
-        Pref.getContentPane().add(jLabel18);
-        jLabel18.setBounds(166, 187, 626, 35);
-
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
-        Pref.getContentPane().add(jLabel19);
-        jLabel19.setBounds(0, 0, 179, 80);
-
-        Return_Pref.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Return_Pref.setText("Previous");
-        Return_Pref.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Return_PrefActionPerformed(evt);
-            }
-        });
-        Pref.getContentPane().add(Return_Pref);
-        Return_Pref.setBounds(10, 519, 137, 50);
-
-        Submit.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Submit.setText("Submit Ballot");
-        Submit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SubmitActionPerformed(evt);
-            }
-        });
-        Pref.getContentPane().add(Submit);
-        Submit.setBounds(865, 519, 137, 50);
-
-        jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-        Pref.getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(422, 240, 185, 28);
-
-        jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
-        Pref.getContentPane().add(jComboBox2);
-        jComboBox2.setBounds(422, 286, 185, 28);
-
-        jComboBox3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
-        Pref.getContentPane().add(jComboBox3);
-        jComboBox3.setBounds(422, 332, 185, 28);
-
-        jComboBox4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
-        Pref.getContentPane().add(jComboBox4);
-        jComboBox4.setBounds(422, 378, 185, 28);
-
-        jComboBox5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
-        Pref.getContentPane().add(jComboBox5);
-        jComboBox5.setBounds(422, 424, 185, 28);
-
-        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel20.setText("1.");
-        Pref.getContentPane().add(jLabel20);
-        jLabel20.setBounds(389, 243, 15, 22);
-
-        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel21.setText("2.");
-        Pref.getContentPane().add(jLabel21);
-        jLabel21.setBounds(389, 289, 15, 22);
-
-        jLabel22.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel22.setText("3.");
-        Pref.getContentPane().add(jLabel22);
-        jLabel22.setBounds(389, 335, 15, 22);
-
-        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel23.setText("4.");
-        Pref.getContentPane().add(jLabel23);
-        jLabel23.setBounds(389, 381, 15, 22);
-
-        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel24.setText("5.");
-        Pref.getContentPane().add(jLabel24);
-        jLabel24.setBounds(389, 427, 15, 22);
-
-        jLabel79.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
-        Pref.getContentPane().add(jLabel79);
-        jLabel79.setBounds(0, 0, 960, 580);
-
         Combined.setBackground(new java.awt.Color(255, 255, 255));
 
         jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
@@ -528,7 +109,7 @@ public class Student extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setMinimumSize(new java.awt.Dimension(980, 1000));
-        jPanel1.setPreferredSize(new java.awt.Dimension(980, 2323));
+        jPanel1.setPreferredSize(new java.awt.Dimension(980, 2400));
         jPanel1.setLayout(null);
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -697,7 +278,7 @@ public class Student extends javax.swing.JFrame {
         jPanel1.add(jRadioButton16);
         jRadioButton16.setBounds(530, 1690, 60, 30);
         jPanel1.add(jSeparator1);
-        jSeparator1.setBounds(0, 1780, 980, 20);
+        jSeparator1.setBounds(0, 1880, 980, 20);
 
         jLabel31.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel31.setText("Election Name");
@@ -712,12 +293,12 @@ public class Student extends javax.swing.JFrame {
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel32.setText("Race #4");
         jPanel1.add(jLabel32);
-        jLabel32.setBounds(0, 1860, 980, 35);
+        jLabel32.setBounds(0, 1930, 980, 35);
 
         jLabel33.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel33.setText("Please label order of preferance, where lower numbers means most preffered:");
         jPanel1.add(jLabel33);
-        jLabel33.setBounds(140, 1940, 626, 35);
+        jLabel33.setBounds(140, 2010, 626, 35);
 
         jComboBox6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
@@ -727,52 +308,52 @@ public class Student extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jComboBox6);
-        jComboBox6.setBounds(400, 2000, 185, 28);
+        jComboBox6.setBounds(400, 2070, 185, 28);
 
         jComboBox7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
         jPanel1.add(jComboBox7);
-        jComboBox7.setBounds(400, 2040, 185, 28);
+        jComboBox7.setBounds(400, 2120, 185, 28);
 
         jComboBox8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
         jPanel1.add(jComboBox8);
-        jComboBox8.setBounds(400, 2090, 185, 28);
+        jComboBox8.setBounds(400, 2170, 185, 28);
 
         jComboBox9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
         jPanel1.add(jComboBox9);
-        jComboBox9.setBounds(400, 2130, 185, 28);
+        jComboBox9.setBounds(400, 2210, 185, 28);
 
         jComboBox10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
         jPanel1.add(jComboBox10);
-        jComboBox10.setBounds(400, 2180, 185, 28);
+        jComboBox10.setBounds(400, 2260, 185, 28);
 
         jLabel34.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel34.setText("1.");
         jPanel1.add(jLabel34);
-        jLabel34.setBounds(370, 2000, 15, 22);
+        jLabel34.setBounds(370, 2070, 15, 22);
 
         jLabel35.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel35.setText("2.");
         jPanel1.add(jLabel35);
-        jLabel35.setBounds(370, 2050, 15, 22);
+        jLabel35.setBounds(370, 2120, 15, 22);
 
         jLabel36.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel36.setText("3.");
         jPanel1.add(jLabel36);
-        jLabel36.setBounds(370, 2090, 15, 22);
+        jLabel36.setBounds(370, 2170, 15, 22);
 
         jLabel37.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel37.setText("4.");
         jPanel1.add(jLabel37);
-        jLabel37.setBounds(370, 2140, 15, 22);
+        jLabel37.setBounds(370, 2210, 15, 22);
 
         jLabel38.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel38.setText("5.");
         jPanel1.add(jLabel38);
-        jLabel38.setBounds(370, 2180, 15, 22);
+        jLabel38.setBounds(370, 2260, 15, 22);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton1.setText("Submit Ballot");
@@ -782,7 +363,7 @@ public class Student extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(370, 2250, 220, 60);
+        jButton1.setBounds(370, 2330, 220, 60);
 
         jLabel39.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -798,18 +379,21 @@ public class Student extends javax.swing.JFrame {
         jLabel40.setBounds(20, 60, 390, 50);
 
         jRadioButton17.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(jRadioButton17);
         jRadioButton17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton17.setText("First Party");
         jPanel1.add(jRadioButton17);
         jRadioButton17.setBounds(430, 190, 105, 31);
 
         jRadioButton18.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(jRadioButton18);
         jRadioButton18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton18.setText("Second Party");
         jPanel1.add(jRadioButton18);
         jRadioButton18.setBounds(430, 240, 129, 31);
 
         jRadioButton19.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(jRadioButton19);
         jRadioButton19.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton19.setText("Third Party");
         jPanel1.add(jRadioButton19);
@@ -819,7 +403,7 @@ public class Student extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setText("Clear Choice");
         jPanel1.add(jButton2);
-        jButton2.setBounds(420, 860, 167, 39);
+        jButton2.setBounds(410, 1770, 167, 39);
         jPanel1.add(jSeparator5);
         jSeparator5.setBounds(0, 970, 980, 20);
 
@@ -832,7 +416,7 @@ public class Student extends javax.swing.JFrame {
         jLabel80.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         jPanel1.add(jLabel80);
-        jLabel80.setBounds(20, 1740, 960, 660);
+        jLabel80.setBounds(10, 1730, 960, 660);
 
         jLabel81.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
@@ -848,6 +432,12 @@ public class Student extends javax.swing.JFrame {
         jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         jPanel1.add(jLabel83);
         jLabel83.setBounds(10, 1130, 960, 660);
+
+        jButton3.setBackground(new java.awt.Color(255, 255, 255));
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton3.setText("Clear Choice");
+        jPanel1.add(jButton3);
+        jButton3.setBounds(420, 860, 167, 39);
 
         jScrollPane2.setViewportView(jPanel1);
 
@@ -934,96 +524,11 @@ public class Student extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton6ActionPerformed
-
-    private void Next_PluralityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Next_PluralityActionPerformed
-        // TODO add your handling code here:
-        Choose_Many.setSize(1000, 600);
-        Choose_Many.getContentPane().setBackground(new java.awt.Color(255,255,255));
-        Choose_Many.setVisible(true);
-        Plurality.setVisible(false);
-    }//GEN-LAST:event_Next_PluralityActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
-    private void Return_ManyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return_ManyActionPerformed
-        // TODO add your handling code here:
-        Plurality.setVisible(true);
-        Choose_Many.setVisible(false);
-    }//GEN-LAST:event_Return_ManyActionPerformed
-
-    private void Next_ManyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Next_ManyActionPerformed
-        // TODO add your handling code here:
-        Binary.setSize(1000, 600);
-        Binary.getContentPane().setBackground(new java.awt.Color(255,255,255));
-        Binary.setVisible(true);
-        Choose_Many.setVisible(false);
-    }//GEN-LAST:event_Next_ManyActionPerformed
-
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
-
-    private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox5ActionPerformed
-
-    private void Return_BinaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return_BinaryActionPerformed
-        // TODO add your handling code here:
-        Choose_Many.setVisible(true);
-        Binary.setVisible(false);
-    }//GEN-LAST:event_Return_BinaryActionPerformed
-
-    private void Next_BinaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Next_BinaryActionPerformed
-        // TODO add your handling code here:
-        Pref.setSize(1000, 600);
-        Pref.getContentPane().setBackground(new java.awt.Color(255,255,255));
-        Pref.setVisible(true);
-        Binary.setVisible(false);
-    }//GEN-LAST:event_Next_BinaryActionPerformed
-
-    private void jRadioButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton7ActionPerformed
-
-    private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
-        // TODO add your handling code here:
-        if(jRadioButton2.isSelected())
-        {
-            jRadioButton2.setSelected(false);
-        }
-    }//GEN-LAST:event_jRadioButton8ActionPerformed
-
-    private void Return_PrefActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return_PrefActionPerformed
-        // TODO add your handling code here:
-        Binary.setVisible(true);
-        Pref.setVisible(false);
-    }//GEN-LAST:event_Return_PrefActionPerformed
-
-    private void SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SubmitActionPerformed
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-
     private void BeginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BeginActionPerformed
         // TODO add your handling code here:
         Combined.setSize(1000, 600);
         Combined.getContentPane().setBackground(new java.awt.Color(255,255,255));
         Combined.setVisible(true);
-        Plurality.setSize(1000, 600);
-        Plurality.getContentPane().setBackground(new java.awt.Color(255,255,255));
-        Plurality.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_BeginActionPerformed
 
@@ -1101,64 +606,28 @@ public class Student extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Begin;
     private javax.swing.JButton Begin1;
-    private javax.swing.JFrame Binary;
-    private javax.swing.JFrame Choose_Many;
     private javax.swing.JFrame Combined;
-    private javax.swing.JButton Next_Binary;
-    private javax.swing.JButton Next_Many;
-    private javax.swing.JButton Next_Plurality;
-    private javax.swing.JFrame Plurality;
-    private javax.swing.JFrame Pref;
-    private javax.swing.JButton Return_Binary;
-    private javax.swing.JButton Return_Many;
-    private javax.swing.JButton Return_Pref;
     private javax.swing.ButtonGroup Single;
-    private javax.swing.JButton Submit;
     private javax.swing.ButtonGroup Yes_No;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox11;
     private javax.swing.JCheckBox jCheckBox12;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
     private javax.swing.JCheckBox jCheckBox7;
     private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JCheckBox jCheckBox9;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox10;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
@@ -1175,27 +644,17 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel77;
-    private javax.swing.JLabel jLabel78;
-    private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
     private javax.swing.JLabel jLabel83;
     private javax.swing.JLabel jLabel84;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabel90;
     private javax.swing.JList<String> jList1;
     private javax.swing.JList<String> jList2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton10;
     private javax.swing.JRadioButton jRadioButton11;
     private javax.swing.JRadioButton jRadioButton12;
@@ -1206,13 +665,6 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton17;
     private javax.swing.JRadioButton jRadioButton18;
     private javax.swing.JRadioButton jRadioButton19;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
-    private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
@@ -1222,8 +674,6 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
