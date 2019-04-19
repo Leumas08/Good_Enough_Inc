@@ -169,9 +169,7 @@ public class Head extends javax.swing.JFrame {
         );
 
         Election_Editor.setBackground(new java.awt.Color(255, 255, 255));
-        Election_Editor.setMaximumSize(new java.awt.Dimension(980, 580));
         Election_Editor.setMinimumSize(new java.awt.Dimension(980, 580));
-        Election_Editor.setPreferredSize(new java.awt.Dimension(980, 580));
         Election_Editor.getContentPane().setLayout(null);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -317,9 +315,7 @@ public class Head extends javax.swing.JFrame {
         Election_Editor.getContentPane().add(jLabel73);
         jLabel73.setBounds(0, 0, 960, 580);
 
-        Results_Page.setMaximumSize(new java.awt.Dimension(12000, 121212));
         Results_Page.setMinimumSize(new java.awt.Dimension(980, 580));
-        Results_Page.setPreferredSize(new java.awt.Dimension(980, 580));
         Results_Page.getContentPane().setLayout(null);
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
