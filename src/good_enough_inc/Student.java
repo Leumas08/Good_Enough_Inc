@@ -86,10 +86,40 @@ public class Student extends javax.swing.JFrame {
         jLabel81 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        jLabel85 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         jLabel82 = new javax.swing.JLabel();
+        Results_Page = new javax.swing.JFrame();
+        jButton5 = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         jLabel1 = new javax.swing.JLabel();
@@ -414,7 +444,7 @@ public class Student extends javax.swing.JFrame {
         jLabel80.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         jPanel1.add(jLabel80);
-        jLabel80.setBounds(10, 1730, 960, 660);
+        jLabel80.setBounds(10, 560, 960, 660);
 
         jLabel81.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
@@ -424,12 +454,17 @@ public class Student extends javax.swing.JFrame {
         jLabel83.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         jPanel1.add(jLabel83);
-        jLabel83.setBounds(10, 1130, 960, 660);
+        jLabel83.setBounds(10, 1170, 960, 660);
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton3.setText("Clear Choice");
         jPanel1.add(jButton3);
         jButton3.setBounds(420, 860, 167, 39);
+
+        jLabel85.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        jPanel1.add(jLabel85);
+        jLabel85.setBounds(10, 1790, 960, 660);
 
         jScrollPane2.setViewportView(jPanel1);
 
@@ -448,6 +483,203 @@ public class Student extends javax.swing.JFrame {
 
         jLabel82.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+
+        Results_Page.setMinimumSize(new java.awt.Dimension(980, 580));
+        Results_Page.getContentPane().setLayout(null);
+
+        jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton5.setText("Return");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        Results_Page.getContentPane().add(jButton5);
+        jButton5.setBounds(10, 520, 130, 51);
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("Results");
+        Results_Page.getContentPane().add(jLabel16);
+        jLabel16.setBounds(350, 60, 375, 29);
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel14.setText("Election");
+        Results_Page.getContentPane().add(jLabel14);
+        jLabel14.setBounds(10, 11, 171, 29);
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel66.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel66.setText("Race 1: Race Name (Binary)");
+
+        jLabel67.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel67.setText("Yes: X");
+
+        jLabel68.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel68.setText("No: Y");
+
+        jLabel69.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel69.setText("Race 3: Race Name (Select Many)");
+
+        jLabel70.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel70.setText("Item 1: W");
+
+        jLabel71.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel71.setText("Item 2: X");
+
+        jLabel72.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel72.setText("Item 3: Y");
+
+        jLabel73.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel73.setText("Item 4: Z");
+
+        jLabel74.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel74.setText("Race 2: Race Name (Choose One)");
+
+        jLabel75.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel75.setText("Item 1: W");
+
+        jLabel76.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel76.setText("Item 2: X");
+
+        jLabel77.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel77.setText("Item 3: Y");
+
+        jLabel78.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel78.setText("Item 4: Z");
+
+        jLabel79.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel79.setText("Race 4: Race Name (Pref)");
+
+        jLabel86.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel86.setText("Item 1: W points");
+
+        jLabel87.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel87.setText("Item 2: X points");
+
+        jLabel88.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel88.setText("Item 3: Y points");
+
+        jLabel89.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel89.setText("Item 4: Z points");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel4.setText("Winner:");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel5.setText("Winner:");
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel8.setText("Winner:");
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel9.setText("Winner:");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel66)
+                    .addComponent(jLabel79)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel87)
+                            .addComponent(jLabel86)
+                            .addComponent(jLabel89)
+                            .addComponent(jLabel88)))
+                    .addComponent(jLabel69)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel71)
+                            .addComponent(jLabel72)
+                            .addComponent(jLabel73)
+                            .addComponent(jLabel70)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel74))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel76)
+                            .addComponent(jLabel75)
+                            .addComponent(jLabel77)
+                            .addComponent(jLabel78)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel67)
+                            .addComponent(jLabel68))))
+                .addContainerGap(74, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel66)
+                .addGap(22, 22, 22)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel67)
+                    .addComponent(jLabel9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel68)
+                .addGap(36, 36, 36)
+                .addComponent(jLabel74)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel75)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel76)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel77)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel78)
+                .addGap(38, 38, 38)
+                .addComponent(jLabel69)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel70)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel71)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel72)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel73)
+                .addGap(39, 39, 39)
+                .addComponent(jLabel79)
+                .addGap(26, 26, 26)
+                .addComponent(jLabel86)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel87)
+                    .addComponent(jLabel8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel88)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel89)
+                .addContainerGap(88, Short.MAX_VALUE))
+        );
+
+        jScrollPane5.setViewportView(jPanel3);
+
+        Results_Page.getContentPane().add(jScrollPane5);
+        jScrollPane5.setBounds(350, 110, 375, 410);
+
+        jLabel90.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
+        Results_Page.getContentPane().add(jLabel90);
+        jLabel90.setBounds(0, 0, 960, 580);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -491,6 +723,11 @@ public class Student extends javax.swing.JFrame {
 
         Begin1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Begin1.setText("View Results");
+        Begin1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Begin1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(Begin1);
         Begin1.setBounds(600, 460, 182, 37);
 
@@ -563,6 +800,18 @@ public class Student extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(true);
+        Results_Page.setVisible(false);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void Begin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Begin1ActionPerformed
+        // TODO add your handling code here:
+        Results_Page.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_Begin1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -602,6 +851,7 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JButton Begin;
     private javax.swing.JButton Begin1;
     private javax.swing.JFrame Combined;
+    private javax.swing.JFrame Results_Page;
     private javax.swing.ButtonGroup Single;
     private javax.swing.ButtonGroup Yes_No;
     private javax.swing.ButtonGroup buttonGroup1;
@@ -610,6 +860,7 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox11;
     private javax.swing.JCheckBox jCheckBox12;
@@ -622,6 +873,8 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
@@ -639,17 +892,42 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
     private javax.swing.JLabel jLabel83;
     private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
     private javax.swing.JList<String> jList1;
     private javax.swing.JList<String> jList2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JRadioButton jRadioButton10;
     private javax.swing.JRadioButton jRadioButton11;
     private javax.swing.JRadioButton jRadioButton12;
@@ -664,6 +942,7 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
