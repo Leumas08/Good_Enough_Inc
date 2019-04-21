@@ -133,6 +133,11 @@ public class Head extends javax.swing.JFrame {
         jLabel72 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
@@ -839,6 +844,31 @@ public class Head extends javax.swing.JFrame {
         Results_Page.getContentPane().add(jButton6);
         jButton6.setBounds(700, 520, 130, 51);
 
+        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel21.setText("box, please select whether you would like to just publish the winners or if you'd like to post the");
+        Results_Page.getContentPane().add(jLabel21);
+        jLabel21.setBounds(380, 30, 600, 20);
+
+        jLabel70.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel70.setText("Please use the boxes below to view the results and demographics for the election.  In the 'Results'");
+        Results_Page.getContentPane().add(jLabel70);
+        jLabel70.setBounds(380, 10, 600, 20);
+
+        jLabel74.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel74.setText("refresh the results and demographics.");
+        Results_Page.getContentPane().add(jLabel74);
+        jLabel74.setBounds(740, 90, 230, 20);
+
+        jLabel75.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel75.setText("vote counts as well.  You can also choose how many of the winners you would like to publish (1st,");
+        Results_Page.getContentPane().add(jLabel75);
+        jLabel75.setBounds(380, 50, 600, 20);
+
+        jLabel76.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel76.setText("2nd, 3rd, etc).  Before clicking 'Publish', please like 'Certify' to verify the results.  Press 'Recount' to");
+        Results_Page.getContentPane().add(jLabel76);
+        jLabel76.setBounds(380, 70, 600, 20);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(null);
@@ -1138,6 +1168,7 @@ public class Head extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -1191,9 +1222,13 @@ public class Head extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;

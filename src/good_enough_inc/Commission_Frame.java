@@ -58,13 +58,17 @@ public class Commission_Frame extends javax.swing.JFrame {
         Delete_Item = new javax.swing.JButton();
         Save_Race = new javax.swing.JButton();
         Return_Race = new javax.swing.JButton();
-        jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel75 = new javax.swing.JLabel();
+        Allowing = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        HowMany = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
         jLabel19 = new javax.swing.JLabel();
         Ballot_Editor = new javax.swing.JFrame();
         Add_Race = new javax.swing.JButton();
@@ -188,6 +192,11 @@ public class Commission_Frame extends javax.swing.JFrame {
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Plurality  (Choose-One Voting)", "Run-off", "Borda-Count", "Binary" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
         Race_Editor.getContentPane().add(jComboBox1);
         jComboBox1.setBounds(165, 221, 275, 28);
 
@@ -242,12 +251,6 @@ public class Commission_Frame extends javax.swing.JFrame {
         Race_Editor.getContentPane().add(Return_Race);
         Return_Race.setBounds(10, 521, 130, 48);
 
-        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
-        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("Allowing Write-ins");
-        Race_Editor.getContentPane().add(jLabel23);
-        jLabel23.setBounds(165, 267, 275, 27);
-
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel24.setText("Race Type");
@@ -260,25 +263,6 @@ public class Commission_Frame extends javax.swing.JFrame {
         Race_Editor.getContentPane().add(jLabel37);
         jLabel37.setBounds(491, 177, 170, 27);
 
-        jRadioButton1.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton1.setText("Allowed");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
-            }
-        });
-        Race_Editor.getContentPane().add(jRadioButton1);
-        jRadioButton1.setBounds(165, 312, 89, 31);
-
-        jRadioButton2.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton2.setText("Not Allowed");
-        Race_Editor.getContentPane().add(jRadioButton2);
-        jRadioButton2.setBounds(319, 312, 123, 31);
-
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText(" write-ins for this race.  To add an item, press 'Add Item'.  To edit or delete an item, click");
         Race_Editor.getContentPane().add(jLabel4);
@@ -287,7 +271,87 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel75.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         Race_Editor.getContentPane().add(jLabel75);
-        jLabel75.setBounds(0, 0, 960, 580);
+        jLabel75.setBounds(0, 0, 960, 600);
+
+        Allowing.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel25.setText("Allowing Write-ins");
+
+        jRadioButton3.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(jRadioButton3);
+        jRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton3.setText("Allowed");
+        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton3ActionPerformed(evt);
+            }
+        });
+
+        jRadioButton4.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(jRadioButton4);
+        jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton4.setText("Not Allowed");
+
+        javax.swing.GroupLayout AllowingLayout = new javax.swing.GroupLayout(Allowing);
+        Allowing.setLayout(AllowingLayout);
+        AllowingLayout.setHorizontalGroup(
+            AllowingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AllowingLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jRadioButton3)
+                .addGap(33, 33, 33)
+                .addComponent(jRadioButton4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        AllowingLayout.setVerticalGroup(
+            AllowingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AllowingLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel25)
+                .addGap(18, 18, 18)
+                .addGroup(AllowingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton3)
+                    .addComponent(jRadioButton4))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Race_Editor.getContentPane().add(Allowing);
+        Allowing.setBounds(180, 280, 253, 94);
+
+        HowMany.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("How many can they choose?");
+
+        jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16" }));
+
+        javax.swing.GroupLayout HowManyLayout = new javax.swing.GroupLayout(HowMany);
+        HowMany.setLayout(HowManyLayout);
+        HowManyLayout.setHorizontalGroup(
+            HowManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HowManyLayout.createSequentialGroup()
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 13, Short.MAX_VALUE))
+        );
+        HowManyLayout.setVerticalGroup(
+            HowManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HowManyLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(HowManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Race_Editor.getContentPane().add(HowMany);
+        HowMany.setBounds(240, 420, 402, 53);
 
         jLabel19.setText("jLabel19");
 
@@ -324,6 +388,8 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel43.setText("Races");
         Ballot_Editor.getContentPane().add(jLabel43);
         jLabel43.setBounds(486, 132, 188, 29);
+
+        jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
 
         Eligible3.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -688,7 +754,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jScrollPane2.setViewportView(Eligible3);
 
         Ballot_Editor.getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(186, 167, 250, 335);
+        jScrollPane2.setBounds(186, 167, 242, 335);
 
         jLabel49.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -972,7 +1038,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         );
 
         getContentPane().add(Dates1);
-        Dates1.setBounds(485, 219, 276, 150);
+        Dates1.setBounds(485, 219, 276, 145);
 
         Add_Ballot.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Add_Ballot.setText("Add Ballot");
@@ -1211,10 +1277,6 @@ public class Commission_Frame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
-
     private void Add_ItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add_ItemActionPerformed
         // TODO add your handling code here:
         Item_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
@@ -1234,6 +1296,22 @@ public class Commission_Frame extends javax.swing.JFrame {
         Item_Editor.setVisible(true);
         Race_Editor.setVisible(false);
     }//GEN-LAST:event_Edit_ItemActionPerformed
+
+    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton3ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+        if(jComboBox1.getSelectedIndex()==3)
+        {
+            Allowing.setVisible(false);
+        }
+        else{
+            Allowing.setVisible(true);
+        }
+            
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1274,6 +1352,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JButton Add_Ballot;
     private javax.swing.JButton Add_Item;
     private javax.swing.JButton Add_Race;
+    private javax.swing.JPanel Allowing;
     private javax.swing.JFrame Ballot_Editor;
     private javax.swing.JTextField Ballot_Name;
     private javax.swing.JList<String> Ballots;
@@ -1299,6 +1378,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JCheckBox Grad_Full;
     private javax.swing.JCheckBox Grad_Online;
     private javax.swing.JCheckBox Grad_Part;
+    private javax.swing.JPanel HowMany;
     private javax.swing.JFrame Item_Editor;
     private javax.swing.JCheckBox Junior3;
     private javax.swing.JCheckBox M1;
@@ -1324,16 +1404,18 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton5;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
@@ -1369,8 +1451,8 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane4;
