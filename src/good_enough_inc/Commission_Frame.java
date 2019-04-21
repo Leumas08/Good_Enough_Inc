@@ -1314,7 +1314,8 @@ public class Commission_Frame extends javax.swing.JFrame {
             HowMany.setVisible(true);
             Allowing.setVisible(true);
         }
-        else{
+        else
+        {
             Allowing.setVisible(true);
             HowMany.setVisible(false);
         }
