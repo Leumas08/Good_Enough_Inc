@@ -191,7 +191,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel31.setBounds(482, 34, 488, 17);
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Plurality  (Choose-One Voting)", "Run-off", "Borda-Count", "Binary" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Plurality  (Choose-One Voting)", "Run-off", "Borda-Count", "Binary", "Choose Many" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -1086,6 +1086,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         // TODO add your handling code here:
         Race_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
         Race_Editor.setSize(1000, 610);
+        HowMany.setVisible(false);
         Race_Editor.setVisible(true);
         Ballot_Editor.setVisible(false);
     }//GEN-LAST:event_Add_RaceActionPerformed
@@ -1306,9 +1307,16 @@ public class Commission_Frame extends javax.swing.JFrame {
         if(jComboBox1.getSelectedIndex()==3)
         {
             Allowing.setVisible(false);
+            HowMany.setVisible(false);
+        }
+        else if(jComboBox1.getSelectedIndex()==4)
+        {
+            HowMany.setVisible(true);
+            Allowing.setVisible(true);
         }
         else{
             Allowing.setVisible(true);
+            HowMany.setVisible(false);
         }
             
     }//GEN-LAST:event_jComboBox1ActionPerformed
