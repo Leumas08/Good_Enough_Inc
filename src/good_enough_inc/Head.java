@@ -32,9 +32,9 @@ public class Head extends javax.swing.JFrame {
         List.setModel(myList);
        // this.Elections[0]=new Election();
     }
-    public Election[] getElections()
+    public Election getElection(int i)
     {
-        return Elections;
+        return Elections[i];
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -166,16 +166,17 @@ public class Head extends javax.swing.JFrame {
         jLabel71 = new javax.swing.JLabel();
 
         jDialog1.setAlwaysOnTop(true);
+        jDialog1.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
         jDialog1Layout.setHorizontalGroup(
             jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 61, Short.MAX_VALUE)
         );
         jDialog1Layout.setVerticalGroup(
             jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 114, Short.MAX_VALUE)
         );
 
         Election_Editor.setBackground(new java.awt.Color(255, 255, 255));
@@ -825,7 +826,7 @@ public class Head extends javax.swing.JFrame {
         jLabel72.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         Results_Page.getContentPane().add(jLabel72);
-        jLabel72.setBounds(0, 0, 960, 580);
+        jLabel72.setBounds(0, 0, 530, 580);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton5.setText("Certify");
@@ -835,7 +836,7 @@ public class Head extends javax.swing.JFrame {
             }
         });
         Results_Page.getContentPane().add(jButton5);
-        jButton5.setBounds(840, 520, 130, 51);
+        jButton5.setBounds(700, 520, 130, 51);
 
         jButton6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton6.setText("Publish");
@@ -845,7 +846,7 @@ public class Head extends javax.swing.JFrame {
             }
         });
         Results_Page.getContentPane().add(jButton6);
-        jButton6.setBounds(700, 520, 130, 51);
+        jButton6.setBounds(840, 520, 130, 51);
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel21.setText("box, please select whether you would like to just publish the winners or if you'd like to post the");
@@ -1057,7 +1058,8 @@ public class Head extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-
+        JOptionPane.showMessageDialog(null, "Results have been Recounted!");
+       // JOptionPane.showMessageDialog(null, infoMessage, "InfoBox: " + titleBar, JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -1076,10 +1078,12 @@ public class Head extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+         JOptionPane.showMessageDialog(null, "Results have been Cerified.\nYou can now Publish Results.");
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+         JOptionPane.showMessageDialog(null, "Results have been Published!");
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
