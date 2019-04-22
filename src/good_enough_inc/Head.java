@@ -32,7 +32,10 @@ public class Head extends javax.swing.JFrame {
         List.setModel(myList);
        // this.Elections[0]=new Election();
     }
-
+    public Election[] getElections()
+    {
+        return Elections;
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -285,7 +288,7 @@ public class Head extends javax.swing.JFrame {
             }
         });
         Election_Editor.getContentPane().add(Return);
-        Return.setBounds(10, 509, 130, 50);
+        Return.setBounds(10, 500, 130, 50);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setText("View & Certify Results");
@@ -295,7 +298,7 @@ public class Head extends javax.swing.JFrame {
             }
         });
         Election_Editor.getContentPane().add(jButton2);
-        jButton2.setBounds(734, 509, 230, 50);
+        jButton2.setBounds(740, 500, 230, 50);
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel24.setText("a vote, enter the ID# and, if the Search Status is 'Found', press 'Disqualify' to disqualify the vote with that ID#.");
@@ -982,7 +985,7 @@ public class Head extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void Edit_ElectionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edit_ElectionActionPerformed
         // TODO add your handling code here:
        if(List.getSelectedIndex() >=0)
@@ -991,7 +994,7 @@ public class Head extends javax.swing.JFrame {
        E_Name.setText(Elections[selected].getName());
        ComName.setText(Elections[selected].getComName());
        ComEmail.setText(Elections[selected].getEmail());
-       Election_Editor.setSize(990, 600);
+       Election_Editor.setSize(1000, 600);
        Election_Editor.getContentPane().setBackground(new java.awt.Color(255, 255, 255));
        Election_Editor.setDefaultCloseOperation(EXIT_ON_CLOSE);
        Election_Editor.setVisible(true);
@@ -1001,19 +1004,15 @@ public class Head extends javax.swing.JFrame {
 
     private void Create_ElectionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Create_ElectionActionPerformed
         // TODO add your handling code here:
-        if(Title.getText()=="")
+        System.out.println("Name:"+Title.getText());
+        if(! Title.getText().equals(""))
         {
-            
-        }
-        else
-        {
-            Elections[Election_Count++]=new Election(Title.getText(), Name.getText(),Email.getText());
+           Elections[Election_Count++]=new Election(Title.getText(), Name.getText(),Email.getText());
             myList.addElement(Title.getText());
             Title.setText("");
             Name.setText("");
-            Email.setText("");
+            Email.setText(""); 
         }
-        System.out.println(Elections[Election_Count-1].getEmail());
     }//GEN-LAST:event_Create_ElectionActionPerformed
 
     private void TitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TitleActionPerformed

@@ -5,6 +5,9 @@
  */
 package good_enough_inc;
 
+import javax.swing.ComboBoxModel;
+import javax.swing.JComboBox;
+
 /**
  *
  * @author swp99
@@ -14,10 +17,18 @@ public class Student extends javax.swing.JFrame {
     /**
      * Creates new form Student
      */
+    JComboBox[] Prefs=new JComboBox[5];
+    int[] Combos={0, 0, 0, 0, 0};
+    ComboBoxModel model;
     public Student() {
         initComponents();
         setSize(1000, 600);
         getContentPane().setBackground(new java.awt.Color(255,255,255));
+        Prefs[0]=Pref1;
+        Prefs[1]=Pref2;
+        Prefs[2]=Pref3;
+        Prefs[3]=Pref4;
+        Prefs[4]=Pref5;
     }
 
     /**
@@ -62,11 +73,11 @@ public class Student extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        jComboBox6 = new javax.swing.JComboBox<>();
-        jComboBox7 = new javax.swing.JComboBox<>();
-        jComboBox8 = new javax.swing.JComboBox<>();
-        jComboBox9 = new javax.swing.JComboBox<>();
-        jComboBox10 = new javax.swing.JComboBox<>();
+        Pref1 = new javax.swing.JComboBox<>();
+        Pref2 = new javax.swing.JComboBox<>();
+        Pref3 = new javax.swing.JComboBox<>();
+        Pref4 = new javax.swing.JComboBox<>();
+        Pref5 = new javax.swing.JComboBox<>();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
@@ -330,35 +341,55 @@ public class Student extends javax.swing.JFrame {
         jPanel1.add(jLabel33);
         jLabel33.setBounds(140, 2010, 626, 35);
 
-        jComboBox6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
-        jComboBox6.addActionListener(new java.awt.event.ActionListener() {
+        Pref1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Pref1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
+        Pref1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox6ActionPerformed(evt);
+                Pref1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jComboBox6);
-        jComboBox6.setBounds(400, 2070, 185, 28);
+        jPanel1.add(Pref1);
+        Pref1.setBounds(400, 2070, 185, 28);
 
-        jComboBox7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
-        jPanel1.add(jComboBox7);
-        jComboBox7.setBounds(400, 2120, 185, 28);
+        Pref2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Pref2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
+        Pref2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Pref2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Pref2);
+        Pref2.setBounds(400, 2120, 185, 28);
 
-        jComboBox8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
-        jPanel1.add(jComboBox8);
-        jComboBox8.setBounds(400, 2170, 185, 28);
+        Pref3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Pref3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
+        Pref3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Pref3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Pref3);
+        Pref3.setBounds(400, 2170, 185, 28);
 
-        jComboBox9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
-        jPanel1.add(jComboBox9);
-        jComboBox9.setBounds(400, 2210, 185, 28);
+        Pref4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Pref4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
+        Pref4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Pref4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Pref4);
+        Pref4.setBounds(400, 2210, 185, 28);
 
-        jComboBox10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
-        jPanel1.add(jComboBox10);
-        jComboBox10.setBounds(400, 2260, 185, 28);
+        Pref5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Pref5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-SELECT AN ITEM-", "Option 1", "Option 2", "Option 3", "Option 4", "Option 5" }));
+        Pref5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Pref5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Pref5);
+        Pref5.setBounds(400, 2260, 185, 28);
 
         jLabel34.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel34.setText("1.");
@@ -792,9 +823,14 @@ public class Student extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton16ActionPerformed
 
-    private void jComboBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox6ActionPerformed
+    private void Pref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pref1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox6ActionPerformed
+        int index= Pref1.getSelectedIndex();
+        Pref1.setModel(model);
+        if(Combos[index-1] == 1)
+        {
+        }
+    }//GEN-LAST:event_Pref1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -811,6 +847,22 @@ public class Student extends javax.swing.JFrame {
         Results_Page.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_Begin1ActionPerformed
+
+    private void Pref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pref3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Pref3ActionPerformed
+
+    private void Pref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pref2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Pref2ActionPerformed
+
+    private void Pref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pref4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Pref4ActionPerformed
+
+    private void Pref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pref5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Pref5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -851,6 +903,11 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JButton Begin;
     private javax.swing.JButton Begin1;
     private javax.swing.JFrame Combined;
+    private javax.swing.JComboBox<String> Pref1;
+    private javax.swing.JComboBox<String> Pref2;
+    private javax.swing.JComboBox<String> Pref3;
+    private javax.swing.JComboBox<String> Pref4;
+    private javax.swing.JComboBox<String> Pref5;
     private javax.swing.JFrame Results_Page;
     private javax.swing.ButtonGroup Single;
     private javax.swing.ButtonGroup Yes_No;
@@ -867,11 +924,6 @@ public class Student extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox7;
     private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JCheckBox jCheckBox9;
-    private javax.swing.JComboBox<String> jComboBox10;
-    private javax.swing.JComboBox<String> jComboBox6;
-    private javax.swing.JComboBox<String> jComboBox7;
-    private javax.swing.JComboBox<String> jComboBox8;
-    private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel16;

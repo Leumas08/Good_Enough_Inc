@@ -31,7 +31,6 @@ public class Commission_Frame extends javax.swing.JFrame {
         initComponents();
         getContentPane().setBackground(new java.awt.Color(255,255,255));
         Ballots.setModel(BallotList);
-        
     }
 
     /**
@@ -137,7 +136,6 @@ public class Commission_Frame extends javax.swing.JFrame {
         Edit_Ballot = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         Ballots = new javax.swing.JList<>();
-        jLabel5 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -152,6 +150,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         Add_Ballot = new javax.swing.JButton();
         jLabel36 = new javax.swing.JLabel();
         jLabel76 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
 
         Race_Editor.getContentPane().setLayout(null);
 
@@ -754,7 +753,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jScrollPane2.setViewportView(Eligible3);
 
         Ballot_Editor.getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(186, 167, 242, 335);
+        jScrollPane2.setBounds(186, 167, 2, 335);
 
         jLabel49.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -932,7 +931,7 @@ public class Commission_Frame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Edit_Ballot);
-        Edit_Ballot.setBounds(70, 330, 180, 53);
+        Edit_Ballot.setBounds(100, 330, 150, 53);
 
         Ballots.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Ballots.setModel(new javax.swing.AbstractListModel<String>() {
@@ -944,10 +943,6 @@ public class Commission_Frame extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane4);
         jScrollPane4.setBounds(257, 219, 185, 206);
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 0, 179, 80);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1048,7 +1043,7 @@ public class Commission_Frame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Add_Ballot);
-        Add_Ballot.setBounds(70, 250, 180, 53);
+        Add_Ballot.setBounds(100, 250, 150, 53);
 
         jLabel36.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1060,6 +1055,11 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         getContentPane().add(jLabel76);
         jLabel76.setBounds(0, 0, 960, 580);
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel15.setText("Election Name");
+        getContentPane().add(jLabel15);
+        jLabel15.setBounds(10, 10, 310, 40);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1237,6 +1237,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         Race_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
         Race_Editor.setSize(1000, 610);
         Race_Editor.setVisible(true);
+        HowMany.setVisible(false);
         Ballot_Editor.setVisible(false);
     }//GEN-LAST:event_Edit_RaceActionPerformed
 
@@ -1292,7 +1293,7 @@ public class Commission_Frame extends javax.swing.JFrame {
 
     private void Edit_ItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edit_ItemActionPerformed
         // TODO add your handling code here:
-         Item_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        Item_Editor.getContentPane().setBackground(new java.awt.Color(255,255,255));
         Item_Editor.setSize(1000, 610);
         Item_Editor.setVisible(true);
         Race_Editor.setVisible(false);
@@ -1420,6 +1421,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel22;
@@ -1442,7 +1444,6 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
