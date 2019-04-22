@@ -20,9 +20,8 @@ public class Comish_Landing_Page extends javax.swing.JFrame {
         initComponents();
         getContentPane().setBackground(new java.awt.Color(255,255,255));
         setSize(1000, 600);
-        
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

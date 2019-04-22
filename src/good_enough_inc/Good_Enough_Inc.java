@@ -19,8 +19,11 @@ public class Good_Enough_Inc {
     public static void main(String[] args) {
         // TODO code application logic here
    //test1
-        new Comish_Landing_Page().setVisible(true);
-        new Student_Landing_Page().setVisible(true);
-        new HSO_Landing_Page().setVisible(true);
+        HSO_Landing_Page HSO = new HSO_Landing_Page();
+        Comish_Landing_Page Com=new Comish_Landing_Page();
+        Student_Landing_Page Student= new Student_Landing_Page();
+        Student.setVisible(true);
+        Com.setVisible(true);
+        HSO.setVisible(true);
     }
 }

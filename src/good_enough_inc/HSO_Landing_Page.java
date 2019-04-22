@@ -16,12 +16,16 @@ public class HSO_Landing_Page extends javax.swing.JFrame {
     /**
      * Creates new form HSO_Landing_Page
      */
+    Head head=new Head();
     public HSO_Landing_Page() {
         initComponents();
         getContentPane().setBackground(new java.awt.Color(255,255,255));
         setSize(1000, 600);
     }
-
+    public Election getElection(int i)
+    {
+        return head.getElection(i);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -69,7 +73,6 @@ public class HSO_Landing_Page extends javax.swing.JFrame {
 
     private void Enter_HSOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Enter_HSOActionPerformed
         // TODO add your handling code here:
-        JFrame head=new Head();
         head.setSize(1000, 600);
         head.setVisible(true);
         this.setVisible(false);

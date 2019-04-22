@@ -1050,6 +1050,7 @@ public class Head extends javax.swing.JFrame {
 
     private void DisqualifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DisqualifyActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Their vote(s) have been removed and the votes have been recounted!");
     }//GEN-LAST:event_DisqualifyActionPerformed
 
     private void ComNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComNameActionPerformed

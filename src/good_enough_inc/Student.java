@@ -7,6 +7,7 @@ package good_enough_inc;
 
 import javax.swing.ComboBoxModel;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -83,23 +84,23 @@ public class Student extends javax.swing.JFrame {
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        Submit = new javax.swing.JButton();
         jLabel39 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
         jLabel40 = new javax.swing.JLabel();
         jRadioButton17 = new javax.swing.JRadioButton();
         jRadioButton18 = new javax.swing.JRadioButton();
         jRadioButton19 = new javax.swing.JRadioButton();
-        jButton2 = new javax.swing.JButton();
+        B_Clear = new javax.swing.JButton();
         jSeparator5 = new javax.swing.JSeparator();
-        jButton4 = new javax.swing.JButton();
+        S_Clear = new javax.swing.JButton();
         jLabel80 = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        O_Clear = new javax.swing.JButton();
         jLabel85 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        buttonGroup1 = new javax.swing.ButtonGroup();
+        Ticket = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         jLabel82 = new javax.swing.JLabel();
         Results_Page = new javax.swing.JFrame();
@@ -416,15 +417,15 @@ public class Student extends javax.swing.JFrame {
         jPanel1.add(jLabel38);
         jLabel38.setBounds(370, 2260, 15, 22);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton1.setText("Submit Ballot");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Submit.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Submit.setText("Submit Ballot");
+        Submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                SubmitActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(370, 2330, 220, 60);
+        jPanel1.add(Submit);
+        Submit.setBounds(370, 2330, 220, 60);
 
         jLabel39.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -440,37 +441,47 @@ public class Student extends javax.swing.JFrame {
         jLabel40.setBounds(20, 60, 390, 50);
 
         jRadioButton17.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(jRadioButton17);
+        Ticket.add(jRadioButton17);
         jRadioButton17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton17.setText("First Party");
         jPanel1.add(jRadioButton17);
         jRadioButton17.setBounds(430, 190, 105, 31);
 
         jRadioButton18.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(jRadioButton18);
+        Ticket.add(jRadioButton18);
         jRadioButton18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton18.setText("Second Party");
         jPanel1.add(jRadioButton18);
         jRadioButton18.setBounds(430, 240, 129, 31);
 
         jRadioButton19.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(jRadioButton19);
+        Ticket.add(jRadioButton19);
         jRadioButton19.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton19.setText("Third Party");
         jPanel1.add(jRadioButton19);
         jRadioButton19.setBounds(430, 290, 113, 31);
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setText("Clear Choice");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(410, 1770, 167, 39);
+        B_Clear.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        B_Clear.setText("Clear Choice");
+        B_Clear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B_ClearActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B_Clear);
+        B_Clear.setBounds(410, 1770, 167, 39);
         jPanel1.add(jSeparator5);
         jSeparator5.setBounds(0, 970, 980, 20);
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setText("Clear Choice");
-        jPanel1.add(jButton4);
-        jButton4.setBounds(410, 340, 167, 39);
+        S_Clear.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        S_Clear.setText("Clear Choice");
+        S_Clear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                S_ClearActionPerformed(evt);
+            }
+        });
+        jPanel1.add(S_Clear);
+        S_Clear.setBounds(410, 340, 167, 39);
 
         jLabel80.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
@@ -487,10 +498,15 @@ public class Student extends javax.swing.JFrame {
         jPanel1.add(jLabel83);
         jLabel83.setBounds(10, 1170, 960, 660);
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton3.setText("Clear Choice");
-        jPanel1.add(jButton3);
-        jButton3.setBounds(420, 860, 167, 39);
+        O_Clear.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        O_Clear.setText("Clear Choice");
+        O_Clear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                O_ClearActionPerformed(evt);
+            }
+        });
+        jPanel1.add(O_Clear);
+        O_Clear.setBounds(420, 860, 167, 39);
 
         jLabel85.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
@@ -526,7 +542,7 @@ public class Student extends javax.swing.JFrame {
             }
         });
         Results_Page.getContentPane().add(jButton5);
-        jButton5.setBounds(10, 520, 130, 51);
+        jButton5.setBounds(10, 510, 130, 51);
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -650,7 +666,7 @@ public class Student extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel67)
                             .addComponent(jLabel68))))
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -826,15 +842,19 @@ public class Student extends javax.swing.JFrame {
     private void Pref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pref1ActionPerformed
         // TODO add your handling code here:
         int index= Pref1.getSelectedIndex();
-        Pref1.setModel(model);
-        if(Combos[index-1] == 1)
-        {
-        }
+        if(Pref2.getSelectedIndex() == index) Pref2.setSelectedIndex(0);
+        else if(Pref3.getSelectedIndex() == index) Pref3.setSelectedIndex(0);
+        else if(Pref4.getSelectedIndex() == index) Pref4.setSelectedIndex(0);
+        else if(Pref5.getSelectedIndex() == index) Pref5.setSelectedIndex(0);
+        
     }//GEN-LAST:event_Pref1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        JOptionPane.showMessageDialog(null, "Your Ballot has been Submitted!");
+        this.setVisible(true);
+        Results_Page.setVisible(false);
+    }//GEN-LAST:event_SubmitActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -844,25 +864,62 @@ public class Student extends javax.swing.JFrame {
 
     private void Begin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Begin1ActionPerformed
         // TODO add your handling code here:
+        Results_Page.setSize(1000, 610);
+        Results_Page.getContentPane().setBackground(new java.awt.Color(255,255,255));
         Results_Page.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_Begin1ActionPerformed
 
     private void Pref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pref3ActionPerformed
         // TODO add your handling code here:
+        int index= Pref3.getSelectedIndex();
+        if(Pref2.getSelectedIndex() == index) Pref2.setSelectedIndex(0);
+        else if(Pref1.getSelectedIndex() == index) Pref1.setSelectedIndex(0);
+        else if(Pref4.getSelectedIndex() == index) Pref4.setSelectedIndex(0);
+        else if(Pref5.getSelectedIndex() == index) Pref5.setSelectedIndex(0);
     }//GEN-LAST:event_Pref3ActionPerformed
 
     private void Pref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pref2ActionPerformed
         // TODO add your handling code here:
+        int index= Pref2.getSelectedIndex();
+        if(Pref1.getSelectedIndex() == index) Pref1.setSelectedIndex(0);
+        else if(Pref3.getSelectedIndex() == index) Pref3.setSelectedIndex(0);
+        else if(Pref4.getSelectedIndex() == index) Pref4.setSelectedIndex(0);
+        else if(Pref5.getSelectedIndex() == index) Pref5.setSelectedIndex(0);
     }//GEN-LAST:event_Pref2ActionPerformed
 
     private void Pref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pref4ActionPerformed
         // TODO add your handling code here:
+        int index= Pref4.getSelectedIndex();
+        if(Pref2.getSelectedIndex() == index) Pref2.setSelectedIndex(0);
+        else if(Pref3.getSelectedIndex() == index) Pref3.setSelectedIndex(0);
+        else if(Pref1.getSelectedIndex() == index) Pref1.setSelectedIndex(0);
+        else if(Pref5.getSelectedIndex() == index) Pref5.setSelectedIndex(0);
     }//GEN-LAST:event_Pref4ActionPerformed
 
     private void Pref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pref5ActionPerformed
         // TODO add your handling code here:
+        int index= Pref5.getSelectedIndex();
+        if(Pref2.getSelectedIndex() == index) Pref2.setSelectedIndex(0);
+        else if(Pref3.getSelectedIndex() == index) Pref3.setSelectedIndex(0);
+        else if(Pref4.getSelectedIndex() == index) Pref4.setSelectedIndex(0);
+        else if(Pref1.getSelectedIndex() == index) Pref1.setSelectedIndex(0);
     }//GEN-LAST:event_Pref5ActionPerformed
+
+    private void S_ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S_ClearActionPerformed
+        // TODO add your handling code here:
+        Ticket.clearSelection();
+    }//GEN-LAST:event_S_ClearActionPerformed
+
+    private void B_ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_ClearActionPerformed
+        // TODO add your handling code here:
+        Yes_No.clearSelection();
+    }//GEN-LAST:event_B_ClearActionPerformed
+
+    private void O_ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_O_ClearActionPerformed
+        // TODO add your handling code here:
+        Single.clearSelection();
+    }//GEN-LAST:event_O_ClearActionPerformed
 
     /**
      * @param args the command line arguments
@@ -900,23 +957,23 @@ public class Student extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton B_Clear;
     private javax.swing.JButton Begin;
     private javax.swing.JButton Begin1;
     private javax.swing.JFrame Combined;
+    private javax.swing.JButton O_Clear;
     private javax.swing.JComboBox<String> Pref1;
     private javax.swing.JComboBox<String> Pref2;
     private javax.swing.JComboBox<String> Pref3;
     private javax.swing.JComboBox<String> Pref4;
     private javax.swing.JComboBox<String> Pref5;
     private javax.swing.JFrame Results_Page;
+    private javax.swing.JButton S_Clear;
     private javax.swing.ButtonGroup Single;
+    private javax.swing.JButton Submit;
+    private javax.swing.ButtonGroup Ticket;
     private javax.swing.ButtonGroup Yes_No;
-    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox11;

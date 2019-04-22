@@ -25,14 +25,24 @@ public class Commission_Frame extends javax.swing.JFrame {
     /**
      * Creates new form Commission_Frame
      */
-    DefaultListModel ElectionList= new DefaultListModel();
-    DefaultListModel BallotList= new DefaultListModel();
+    DefaultListModel ElectionList = new DefaultListModel();
+    DefaultListModel BallotList = new DefaultListModel();
+    Ballot[] ballots=new Ballot[50];
+    Election election;
+    
     public Commission_Frame() {
         initComponents();
         getContentPane().setBackground(new java.awt.Color(255,255,255));
         Ballots.setModel(BallotList);
     }
-
+    public void updateBallotList()
+    {
+        BallotList.removeAllElements();
+        for(int i=0; i<ballots.length; i++)
+        {
+            BallotList.addElement(ballots[i].name);
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
