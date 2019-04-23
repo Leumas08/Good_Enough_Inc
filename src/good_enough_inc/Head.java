@@ -825,7 +825,7 @@ public class Head extends javax.swing.JFrame {
         jLabel72.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         Results_Page.getContentPane().add(jLabel72);
-        jLabel72.setBounds(0, 0, 980, 580);
+        jLabel72.setBounds(0, 0, 370, 580);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton5.setText("Certify and Publish");
@@ -840,7 +840,7 @@ public class Head extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel21.setText("box, please select whether you would like to just publish the winners or if you'd like to post the");
         Results_Page.getContentPane().add(jLabel21);
-        jLabel21.setBounds(380, 30, 600, 20);
+        jLabel21.setBounds(400, 30, 580, 20);
 
         jLabel70.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel70.setText("Please use the boxes below to view the results and demographics for the election.  In the 'Results'");
@@ -848,9 +848,9 @@ public class Head extends javax.swing.JFrame {
         jLabel70.setBounds(380, 10, 600, 20);
 
         jLabel74.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel74.setText("refresh the results and demographics.");
+        jLabel74.setText("'Recount' to refresh the results and demographics.");
         Results_Page.getContentPane().add(jLabel74);
-        jLabel74.setBounds(740, 90, 230, 20);
+        jLabel74.setBounds(650, 90, 320, 20);
 
         jLabel75.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel75.setText("vote counts as well.  You can also choose how many of the winners you would like to publish (1st,");
@@ -858,9 +858,9 @@ public class Head extends javax.swing.JFrame {
         jLabel75.setBounds(380, 50, 600, 20);
 
         jLabel76.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel76.setText("2nd, 3rd, etc).  Before clicking 'Publish', please like 'Certify' to verify the results.  Press 'Recount' to");
+        jLabel76.setText("2nd, 3rd, etc).  To Certify and Publish the selected results, press 'Certify and Publish'.  Press");
         Results_Page.getContentPane().add(jLabel76);
-        jLabel76.setBounds(380, 70, 600, 20);
+        jLabel76.setBounds(420, 70, 560, 20);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));

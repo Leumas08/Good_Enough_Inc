@@ -150,6 +150,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel57 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel73 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         buttonGroup1 = new javax.swing.ButtonGroup();
         jLabel3 = new javax.swing.JLabel();
         Edit_Ballot = new javax.swing.JButton();
@@ -294,7 +295,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel75.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         Race_Editor.getContentPane().add(jLabel75);
-        jLabel75.setBounds(0, 0, 960, 260);
+        jLabel75.setBounds(0, 0, 990, 590);
 
         Allowing.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -886,12 +887,11 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel45.setBounds(556, 11, 414, 22);
 
         jLabel54.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel54.setText("Item Name:");
+        jLabel54.setText("Item Name*:");
         Item_Editor.getContentPane().add(jLabel54);
-        jLabel54.setBounds(253, 183, 128, 29);
+        jLabel54.setBounds(240, 180, 150, 29);
 
         Can_Name.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Can_Name.setText("Name of Candidate");
         Can_Name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Can_NameActionPerformed(evt);
@@ -906,7 +906,6 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel56.setBounds(260, 260, 121, 29);
 
         Can_Party.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Can_Party.setText("Party of Candidate");
         Can_Party.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Can_PartyActionPerformed(evt);
@@ -916,14 +915,18 @@ public class Commission_Frame extends javax.swing.JFrame {
         Can_Party.setBounds(399, 257, 326, 35);
 
         Can_ID.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Can_ID.setText("ID# of Candidate");
+        Can_ID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Can_IDActionPerformed(evt);
+            }
+        });
         Item_Editor.getContentPane().add(Can_ID);
         Can_ID.setBounds(399, 334, 326, 40);
 
         jLabel55.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel55.setText("Item ID:");
+        jLabel55.setText("Item ID#:");
         Item_Editor.getContentPane().add(jLabel55);
-        jLabel55.setBounds(290, 339, 91, 29);
+        jLabel55.setBounds(271, 339, 110, 29);
 
         Return_Item.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Return_Item.setText("Return");
@@ -969,6 +972,12 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         Item_Editor.getContentPane().add(jLabel73);
         jLabel73.setBounds(0, 0, 960, 580);
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("* denotes mandatory field");
+        Item_Editor.getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 550, 990, 17);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -1418,6 +1427,10 @@ public class Commission_Frame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_Save_RaceActionPerformed
 
+    private void Can_IDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Can_IDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Can_IDActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1542,6 +1555,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
