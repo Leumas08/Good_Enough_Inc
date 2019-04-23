@@ -67,6 +67,8 @@ public class Head extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         E_Name = new javax.swing.JTextField();
         jLabel73 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
         Results_Page = new javax.swing.JFrame();
         jButton3 = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
@@ -160,7 +162,6 @@ public class Head extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
 
@@ -234,12 +235,12 @@ public class Head extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel13.setText("To change the current Commissioner, type in the new information and press 'Update Commissioner'.");
         Election_Editor.getContentPane().add(jLabel13);
-        jLabel13.setBounds(350, 20, 613, 17);
+        jLabel13.setBounds(360, 20, 613, 17);
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel17.setText("Commissioner Information");
         Election_Editor.getContentPane().add(jLabel17);
-        jLabel17.setBounds(146, 188, 279, 29);
+        jLabel17.setBounds(170, 190, 279, 29);
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -301,14 +302,14 @@ public class Head extends javax.swing.JFrame {
         jButton2.setBounds(740, 500, 230, 50);
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel24.setText("a vote, enter the ID# and, if the Search Status is 'Found', press 'Disqualify' to disqualify the vote with that ID#.");
+        jLabel24.setText("press 'Disqualify and Recount' to disqualify the vote with that ID# and to recount the results. To");
         Election_Editor.getContentPane().add(jLabel24);
-        jLabel24.setBounds(290, 40, 675, 17);
+        jLabel24.setBounds(380, 60, 590, 17);
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel15.setText("To view the election results and demographics as well as certify results select 'View & Certify Results'");
+        jLabel15.setText("view the election results and demographics as well as certify results select 'View & Certify Results'.");
         Election_Editor.getContentPane().add(jLabel15);
-        jLabel15.setBounds(360, 60, 604, 17);
+        jLabel15.setBounds(390, 80, 590, 17);
 
         E_Name.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         E_Name.setText("Election Name");
@@ -323,7 +324,18 @@ public class Head extends javax.swing.JFrame {
         jLabel73.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         Election_Editor.getContentPane().add(jLabel73);
-        jLabel73.setBounds(0, 0, 960, 580);
+        jLabel73.setBounds(0, -10, 980, 580);
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setText("To disqualify a vote, enter the student's ID# and press 'Search'.  If the 'Search Status' is 'Found', ");
+        Election_Editor.getContentPane().add(jLabel5);
+        jLabel5.setBounds(380, 40, 600, 17);
+
+        jLabel79.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel79.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel79.setText("Status: Open/Close");
+        Election_Editor.getContentPane().add(jLabel79);
+        jLabel79.setBounds(190, 350, 268, 29);
 
         Results_Page.setMinimumSize(new java.awt.Dimension(980, 580));
         Results_Page.getContentPane().setLayout(null);
@@ -959,10 +971,6 @@ public class Head extends javax.swing.JFrame {
         getContentPane().add(jLabel22);
         jLabel22.setBounds(542, 64, 428, 17);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/L1.JPG"))); // NOI18N
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 0, 170, 80);
-
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel23.setText("  When finsihed, press 'Create Election'.");
         getContentPane().add(jLabel23);
@@ -971,7 +979,7 @@ public class Head extends javax.swing.JFrame {
         jLabel71.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         getContentPane().add(jLabel71);
-        jLabel71.setBounds(0, 0, 960, 580);
+        jLabel71.setBounds(0, 0, 980, 580);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1216,6 +1224,7 @@ public class Head extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;

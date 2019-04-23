@@ -18,6 +18,7 @@ public class Student extends javax.swing.JFrame {
     /**
      * Creates new form Student
      */
+    int voteCount=0;
     JComboBox[] Prefs=new JComboBox[5];
     int[] Combos={0, 0, 0, 0, 0};
     ComboBoxModel model;
@@ -805,10 +806,16 @@ public class Student extends javax.swing.JFrame {
 
     private void BeginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BeginActionPerformed
         // TODO add your handling code here:
+        if(voteCount == 0){
         Combined.setSize(1000, 600);
         Combined.getContentPane().setBackground(new java.awt.Color(255,255,255));
         Combined.setVisible(true);
         this.setVisible(false);
+        voteCount++;
+        }
+        else{
+              JOptionPane.showMessageDialog(null, "You have already voted in this election!");  
+        }
     }//GEN-LAST:event_BeginActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed

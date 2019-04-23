@@ -1120,7 +1120,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel76.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         getContentPane().add(jLabel76);
-        jLabel76.setBounds(0, 0, 960, 580);
+        jLabel76.setBounds(0, 0, 980, 580);
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel15.setText("Election Name");
