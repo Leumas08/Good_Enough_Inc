@@ -850,7 +850,7 @@ public class Head extends javax.swing.JFrame {
         jLabel74.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel74.setText("'Recount' to refresh the results and demographics.");
         Results_Page.getContentPane().add(jLabel74);
-        jLabel74.setBounds(650, 90, 320, 20);
+        jLabel74.setBounds(670, 90, 320, 20);
 
         jLabel75.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel75.setText("vote counts as well.  You can also choose how many of the winners you would like to publish (1st,");
