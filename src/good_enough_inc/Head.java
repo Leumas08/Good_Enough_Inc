@@ -135,7 +135,6 @@ public class Head extends javax.swing.JFrame {
         jRadioButton8 = new javax.swing.JRadioButton();
         jLabel72 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
         jLabel74 = new javax.swing.JLabel();
@@ -826,27 +825,17 @@ public class Head extends javax.swing.JFrame {
         jLabel72.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         Results_Page.getContentPane().add(jLabel72);
-        jLabel72.setBounds(0, 0, 530, 580);
+        jLabel72.setBounds(0, 0, 980, 580);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton5.setText("Certify");
+        jButton5.setText("Certify and Publish");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
         Results_Page.getContentPane().add(jButton5);
-        jButton5.setBounds(700, 520, 130, 51);
-
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton6.setText("Publish");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        Results_Page.getContentPane().add(jButton6);
-        jButton6.setBounds(840, 520, 130, 51);
+        jButton5.setBounds(700, 520, 270, 51);
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel21.setText("box, please select whether you would like to just publish the winners or if you'd like to post the");
@@ -1079,13 +1068,8 @@ public class Head extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-         JOptionPane.showMessageDialog(null, "Results have been Cerified.\nYou can now Publish Results.");
+         JOptionPane.showMessageDialog(null, "Results have been Cerified and Published!");
     }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-         JOptionPane.showMessageDialog(null, "Results have been Published!");
-    }//GEN-LAST:event_jButton6ActionPerformed
 
     private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
         // TODO add your handling code here:
@@ -1154,7 +1138,6 @@ public class Head extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;

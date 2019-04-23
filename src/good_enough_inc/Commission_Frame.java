@@ -27,13 +27,20 @@ public class Commission_Frame extends javax.swing.JFrame {
      */
     DefaultListModel ElectionList = new DefaultListModel();
     DefaultListModel BallotList = new DefaultListModel();
+    DefaultListModel ItemLists = new DefaultListModel();
+    DefaultListModel RaceLists = new DefaultListModel();
     Ballot[] ballots=new Ballot[50];
+    Race[] races=new Race[50];
+    Item[] items=new Item[50];
     Election election;
     
     public Commission_Frame() {
         initComponents();
         getContentPane().setBackground(new java.awt.Color(255,255,255));
         Ballots.setModel(BallotList);
+        ItemList.setModel(ItemLists);
+        Race_List.setModel(RaceLists);
+        
     }
     public void updateBallotList()
     {
@@ -53,7 +60,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private void initComponents() {
 
         Race_Editor = new javax.swing.JFrame();
-        jTextField1 = new javax.swing.JTextField();
+        Name_of_Race = new javax.swing.JTextField();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
@@ -61,7 +68,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        ItemList = new javax.swing.JList<>();
         Add_Item = new javax.swing.JButton();
         Edit_Item = new javax.swing.JButton();
         Delete_Item = new javax.swing.JButton();
@@ -166,15 +173,15 @@ public class Commission_Frame extends javax.swing.JFrame {
 
         Race_Editor.getContentPane().setLayout(null);
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jTextField1.setText("Race Name");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        Name_of_Race.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Name_of_Race.setText("Race Name");
+        Name_of_Race.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                Name_of_RaceActionPerformed(evt);
             }
         });
-        Race_Editor.getContentPane().add(jTextField1);
-        jTextField1.setBounds(10, 16, 206, 46);
+        Race_Editor.getContentPane().add(Name_of_Race);
+        Name_of_Race.setBounds(10, 16, 206, 46);
 
         jLabel41.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel41.setText("on the item in the list and press the coresponding button to the right of the list.");
@@ -211,13 +218,13 @@ public class Commission_Frame extends javax.swing.JFrame {
         Race_Editor.getContentPane().add(jComboBox1);
         jComboBox1.setBounds(165, 221, 275, 28);
 
-        jList1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        ItemList.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ItemList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane1.setViewportView(jList1);
+        jScrollPane1.setViewportView(ItemList);
 
         Race_Editor.getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(491, 210, 170, 198);
@@ -249,6 +256,11 @@ public class Commission_Frame extends javax.swing.JFrame {
 
         Save_Race.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Save_Race.setText("Save Race");
+        Save_Race.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Save_RaceActionPerformed(evt);
+            }
+        });
         Race_Editor.getContentPane().add(Save_Race);
         Save_Race.setBounds(840, 521, 130, 48);
 
@@ -282,7 +294,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel75.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         Race_Editor.getContentPane().add(jLabel75);
-        jLabel75.setBounds(0, 0, 960, 600);
+        jLabel75.setBounds(0, 0, 960, 260);
 
         Allowing.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -314,7 +326,7 @@ public class Commission_Frame extends javax.swing.JFrame {
                 .addComponent(jRadioButton3)
                 .addGap(33, 33, 33)
                 .addComponent(jRadioButton4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
             .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         AllowingLayout.setVerticalGroup(
@@ -330,7 +342,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         );
 
         Race_Editor.getContentPane().add(Allowing);
-        Allowing.setBounds(180, 280, 253, 94);
+        Allowing.setBounds(173, 280, 260, 94);
 
         HowMany.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -925,6 +937,11 @@ public class Commission_Frame extends javax.swing.JFrame {
 
         Save_Item.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Save_Item.setText("Save Item");
+        Save_Item.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Save_ItemActionPerformed(evt);
+            }
+        });
         Item_Editor.getContentPane().add(Save_Item);
         Save_Item.setBounds(840, 521, 130, 48);
 
@@ -1321,17 +1338,21 @@ public class Commission_Frame extends javax.swing.JFrame {
         // TODO add your handling code here:
         Race_Editor.setVisible(true);
         Item_Editor.setVisible(false);
+                Can_Name.setText("Name of Canidate");
+        Can_Party.setText("Party of Canidate");
+        Can_ID.setText("ID# of Canidate");
     }//GEN-LAST:event_Return_ItemActionPerformed
 
     private void Return_RaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return_RaceActionPerformed
         // TODO add your handling code here:
         Ballot_Editor.setVisible(true);
         Race_Editor.setVisible(false);
+        Name_of_Race.setText("Race Name");
     }//GEN-LAST:event_Return_RaceActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void Name_of_RaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Name_of_RaceActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_Name_of_RaceActionPerformed
 
     private void Add_ItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add_ItemActionPerformed
         // TODO add your handling code here:
@@ -1384,6 +1405,18 @@ public class Commission_Frame extends javax.swing.JFrame {
     private void CSEEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CSEEActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CSEEActionPerformed
+
+    private void Save_ItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save_ItemActionPerformed
+        // TODO add your handling code here:
+        ItemLists.addElement(Can_Name.getText());
+
+    }//GEN-LAST:event_Save_ItemActionPerformed
+
+    private void Save_RaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save_RaceActionPerformed
+        // TODO add your handling code here:
+        RaceLists.addElement(Name_of_Race.getText());
+        
+    }//GEN-LAST:event_Save_RaceActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1452,6 +1485,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JCheckBox Grad_Online;
     private javax.swing.JCheckBox Grad_Part;
     private javax.swing.JPanel HowMany;
+    private javax.swing.JList<String> ItemList;
     private javax.swing.JFrame Item_Editor;
     private javax.swing.JCheckBox Junior3;
     private javax.swing.JCheckBox M1;
@@ -1460,6 +1494,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JCheckBox MAE;
     private javax.swing.JCheckBox M_All;
     private javax.swing.JCheckBox Male;
+    private javax.swing.JTextField Name_of_Race;
     private javax.swing.JTextField Open_Date1;
     private javax.swing.JFrame Race_Editor;
     private javax.swing.JList<String> Race_List;
@@ -1523,7 +1558,6 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JScrollPane jScrollPane1;
@@ -1531,6 +1565,5 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
