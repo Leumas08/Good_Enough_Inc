@@ -378,7 +378,7 @@ public class Commission_Frame extends javax.swing.JFrame {
 
         Race_List.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Race_List.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Race 1", " " };
+            String[] strings = { "Race 1" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -401,6 +401,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
 
         Eligible3.setBackground(new java.awt.Color(255, 255, 255));
+        Eligible3.setMinimumSize(new java.awt.Dimension(240, 741));
 
         Under_All.setBackground(new java.awt.Color(255, 255, 255));
         Under_All.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -763,7 +764,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jScrollPane2.setViewportView(Eligible3);
 
         Ballot_Editor.getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(186, 167, 2, 335);
+        jScrollPane2.setBounds(186, 167, 242, 335);
 
         jLabel49.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -784,7 +785,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton5.setText("Submit");
         Ballot_Editor.getContentPane().add(jButton5);
-        jButton5.setBounds(838, 508, 132, 61);
+        jButton5.setBounds(840, 520, 132, 50);
 
         Delete_Race.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Delete_Race.setText("Delete Race");
@@ -804,7 +805,7 @@ public class Commission_Frame extends javax.swing.JFrame {
             }
         });
         Ballot_Editor.getContentPane().add(Return_Ballot);
-        Return_Ballot.setBounds(19, 508, 132, 61);
+        Return_Ballot.setBounds(10, 520, 130, 50);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Please use the box on the left to edit the Ballot's name.  To select Eligible");
