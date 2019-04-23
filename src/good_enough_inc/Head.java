@@ -825,7 +825,7 @@ public class Head extends javax.swing.JFrame {
         jLabel72.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/good_enough_inc/Wildcat.png"))); // NOI18N
         Results_Page.getContentPane().add(jLabel72);
-        jLabel72.setBounds(0, 0, 370, 580);
+        jLabel72.setBounds(0, 0, 980, 580);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton5.setText("Certify and Publish");
