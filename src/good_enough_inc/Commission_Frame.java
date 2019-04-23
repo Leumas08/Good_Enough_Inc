@@ -77,7 +77,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jRadioButton4 = new javax.swing.JRadioButton();
         HowMany = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        jSpinner1 = new javax.swing.JSpinner();
         jLabel19 = new javax.swing.JLabel();
         Ballot_Editor = new javax.swing.JFrame();
         Add_Race = new javax.swing.JButton();
@@ -115,6 +115,8 @@ public class Commission_Frame extends javax.swing.JFrame {
         G_All = new javax.swing.JCheckBox();
         Male = new javax.swing.JCheckBox();
         Female = new javax.swing.JCheckBox();
+        MAE = new javax.swing.JCheckBox();
+        CSEE = new javax.swing.JCheckBox();
         jLabel49 = new javax.swing.JLabel();
         Edit_Race = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
@@ -336,8 +338,7 @@ public class Commission_Frame extends javax.swing.JFrame {
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("How many can they choose?");
 
-        jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16" }));
+        jSpinner1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
         javax.swing.GroupLayout HowManyLayout = new javax.swing.GroupLayout(HowMany);
         HowMany.setLayout(HowManyLayout);
@@ -345,18 +346,20 @@ public class Commission_Frame extends javax.swing.JFrame {
             HowManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(HowManyLayout.createSequentialGroup()
                 .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 13, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSpinner1, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                .addContainerGap())
         );
         HowManyLayout.setVerticalGroup(
             HowManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(HowManyLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(HowManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(HowManyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(HowManyLayout.createSequentialGroup()
+                        .addComponent(jSpinner1)
+                        .addGap(1, 1, 1))
+                    .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.LEADING))
+                .addGap(13, 13, 13))
         );
 
         Race_Editor.getContentPane().add(HowMany);
@@ -634,53 +637,69 @@ public class Commission_Frame extends javax.swing.JFrame {
             }
         });
 
+        MAE.setBackground(new java.awt.Color(255, 255, 255));
+        MAE.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        MAE.setText("MAE");
+        MAE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MAEActionPerformed(evt);
+            }
+        });
+
+        CSEE.setBackground(new java.awt.Color(255, 255, 255));
+        CSEE.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        CSEE.setText("CSEE");
+        CSEE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CSEEActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout Eligible3Layout = new javax.swing.GroupLayout(Eligible3);
         Eligible3.setLayout(Eligible3Layout);
         Eligible3Layout.setHorizontalGroup(
             Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Eligible3Layout.createSequentialGroup()
                 .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel47, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel47, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
                     .addComponent(jLabel50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(Eligible3Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Eligible3Layout.createSequentialGroup()
+                                .addGap(27, 27, 27)
+                                .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Under_Full)
+                                    .addComponent(Under_Part)
+                                    .addComponent(Under_Online)))
+                            .addComponent(Grad_All)
+                            .addGroup(Eligible3Layout.createSequentialGroup()
+                                .addGap(31, 31, 31)
+                                .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Grad_Part)
+                                    .addComponent(Grad_Full)
+                                    .addComponent(Grad_Online)))
+                            .addComponent(Freshman)
+                            .addComponent(Sophmore3)
+                            .addComponent(Junior3)
+                            .addComponent(Senior3)
+                            .addComponent(Under_All)
+                            .addGroup(Eligible3Layout.createSequentialGroup()
+                                .addGap(41, 41, 41)
+                                .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(C2)
+                                    .addComponent(C1)
+                                    .addGroup(Eligible3Layout.createSequentialGroup()
+                                        .addGap(21, 21, 21)
+                                        .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(MAE)
+                                            .addComponent(CSEE)))))))
+                    .addGroup(Eligible3Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel52, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(Eligible3Layout.createSequentialGroup()
-                                .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(Eligible3Layout.createSequentialGroup()
-                                        .addGap(27, 27, 27)
-                                        .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Under_Full)
-                                            .addComponent(Under_Part)
-                                            .addComponent(Under_Online)))
-                                    .addComponent(Grad_All)
-                                    .addGroup(Eligible3Layout.createSequentialGroup()
-                                        .addGap(31, 31, 31)
-                                        .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Grad_Part)
-                                            .addComponent(Grad_Full)
-                                            .addComponent(Grad_Online)))
-                                    .addComponent(Freshman)
-                                    .addComponent(Sophmore3)
-                                    .addComponent(Junior3)
-                                    .addComponent(Senior3)
-                                    .addComponent(Under_All)
-                                    .addGroup(Eligible3Layout.createSequentialGroup()
-                                        .addGap(41, 41, 41)
-                                        .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(C2)
-                                            .addComponent(C1)
-                                            .addComponent(C3)))
-                                    .addGroup(Eligible3Layout.createSequentialGroup()
-                                        .addGap(10, 10, 10)
-                                        .addComponent(G_All)))
-                                .addGap(0, 20, Short.MAX_VALUE))))
-                    .addGroup(Eligible3Layout.createSequentialGroup()
-                        .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(Eligible3Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
                                 .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(M_All)
                                     .addGroup(Eligible3Layout.createSequentialGroup()
@@ -689,14 +708,20 @@ public class Commission_Frame extends javax.swing.JFrame {
                                             .addComponent(M2)
                                             .addComponent(M1)
                                             .addComponent(M3)))
-                                    .addComponent(College_All)))
-                            .addGroup(Eligible3Layout.createSequentialGroup()
-                                .addGap(51, 51, 51)
-                                .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Male)
-                                    .addComponent(Female)))
-                            .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                    .addComponent(College_All)
+                                    .addGroup(Eligible3Layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(G_All))
+                                    .addGroup(Eligible3Layout.createSequentialGroup()
+                                        .addGap(41, 41, 41)
+                                        .addGroup(Eligible3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(Male)
+                                            .addComponent(Female)))
+                                    .addGroup(Eligible3Layout.createSequentialGroup()
+                                        .addGap(37, 37, 37)
+                                        .addComponent(C3)))
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         Eligible3Layout.setVerticalGroup(
@@ -748,9 +773,13 @@ public class Commission_Frame extends javax.swing.JFrame {
                 .addComponent(C1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(C2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(CSEE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(MAE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(C3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel52)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(G_All)
@@ -1207,16 +1236,30 @@ public class Commission_Frame extends javax.swing.JFrame {
             C1.setSelected(true);
             C2.setSelected(true);
             C3.setSelected(true);
+            MAE.setSelected(true);
+            CSEE.setSelected(true);
         }
         else{
             C1.setSelected(false);
             C2.setSelected(false);
             C3.setSelected(false);
+             MAE.setSelected(false);
+            CSEE.setSelected(false);
         }
     }//GEN-LAST:event_College_AllActionPerformed
 
     private void C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C2ActionPerformed
         // TODO add your handling code here:
+        if(C2.isSelected())
+        {
+            MAE.setSelected(true);
+            CSEE.setSelected(true);
+        }
+        else
+        {
+            MAE.setSelected(false);
+            CSEE.setSelected(false);
+        }
     }//GEN-LAST:event_C2ActionPerformed
 
     private void C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ActionPerformed
@@ -1334,6 +1377,14 @@ public class Commission_Frame extends javax.swing.JFrame {
             
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
+    private void MAEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MAEActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MAEActionPerformed
+
+    private void CSEEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CSEEActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CSEEActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1380,6 +1431,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JCheckBox C1;
     private javax.swing.JCheckBox C2;
     private javax.swing.JCheckBox C3;
+    private javax.swing.JCheckBox CSEE;
     private javax.swing.JTextField Can_ID;
     private javax.swing.JTextField Can_Name;
     private javax.swing.JTextField Can_Party;
@@ -1405,6 +1457,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JCheckBox M1;
     private javax.swing.JCheckBox M2;
     private javax.swing.JCheckBox M3;
+    private javax.swing.JCheckBox MAE;
     private javax.swing.JCheckBox M_All;
     private javax.swing.JCheckBox Male;
     private javax.swing.JTextField Open_Date1;
@@ -1425,7 +1478,6 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton5;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1478,6 +1530,7 @@ public class Commission_Frame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
